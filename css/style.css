@@ -1,0 +1,235 @@
+body{
+	color: green;
+	font-family: 'PT Sans';
+	margin: 0;
+	padding: 0;
+}
+
+h5{
+	color: yellow;
+	font-family: 'PT Sans';
+}
+h3{
+	color: blue;
+	font-family: 'PT Sans';
+}
+
+/*header*/
+.header{
+	background-color: white;
+	margin-bottom: -20px;
+}
+.header-elements{
+	/*background-color: gray;*/
+	width: 1200px;
+	height: 55px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.nav-menu-left ul li{
+	float:left;
+	background-color: red;
+	margin-right: 110px;
+}
+.nav-logo{
+	background-color: green;
+	float: left;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.nav-logo img{
+	width: 140px;
+	height: 70px;
+}
+.nav-menu-right ul li{
+	background-color: red;
+	float: left;
+	margin-left: 110px;
+}
+.nav-clear{
+	clear: both;
+}
+/*section in sedona-index.html*/
+.section{
+	/*background-color: #ff8000;*/
+}
+.section-elements{
+	/*background-color: #ffbf00;*/
+	width: 1200px;
+}
+.section-top{
+	background-image: url("../img/content/welcome-sedona-image.jpg");
+	height: 770px;
+}
+.section-top-welcome{
+	/*background-color: #bfff00;*/
+	padding-top: 75px;
+	text-align: center;
+}
+.section-top-sedona{
+	/*background-color: #80ff00;*/
+	text-align: center;
+}
+.section-top-footer{
+	margin-top: -15px;
+	/*background-color: 	#00bfff;*/
+	text-align: center;
+}
+/*section-info in sedona-index.html level 1*/
+.section-info-first{
+	background-color: #ff00ff;
+}
+.section-info-first-container{
+	text-align: center;
+	width: 400px;
+	height: 20px;
+	float: left;
+}
+.section-info-first-container h3,
+.section-info-first-container p{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.section-info-first-image img{
+	width: 800px;
+	height: 260px;
+	float: left;
+}
+.section-info-first-clear{
+	clear:both;
+}
+/*section-info in sedona-index.html level 2*/
+.section-info-second{
+	background-color: #bf00ff;
+}
+.section-info-second-block{
+	text-align: center;
+	float: left;
+	width: 400px;
+	height: 335px;
+}
+.section-info-second-block img,
+.section-info-second-block h3,
+.section-info-second-block p{
+	margin-top: 40px;
+	margin-left: 65px;
+	margin-right: 65px;
+}
+.section-info-second-clear{
+	clear: both;
+}
+
+/*section-info in sedona-index.html level 3*/
+.section-info-third{
+	background-color: #ff0080;
+}
+.section-info-third-image{
+	float: left;
+	width: 800px;
+}
+.section-info-third-image img{
+	width: 800px;
+	height: 260px;
+}
+.section-info-third-container{
+	float: left;
+	text-align: center;
+	height: 260px;
+	width: 400px;
+}
+.section-info-third-container h3,
+.section-info-third-container p{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.section-info-third-clear{
+	clear: both;
+}
+/*section-info in sedona-index.html level 4*/
+.section-info-last{
+	background-color: #ff0040;
+}
+.section-info-last-container{
+	text-align: center;
+	float: left;
+	width: 400px;
+	height: 260px;
+}
+.section-info-last-container h3,
+.section-info-last-container p{
+	margin-top: 40px;
+	margin-left: 65px;
+	margin-right: 65px;
+}
+.section-info-last-clear{
+	clear: both;
+}
+.section-info-last-footer{
+	height: 295px;
+	padding-top: 65px;
+	text-align: center;
+}
+/*footer*/
+.footer{
+	/*background-color: #00ffff;*/
+	margin-top: -20px; 
+}
+.footer-elements{
+	width: 1200px;
+	/*background-color: #00bfff;*/
+	background-image: url("../img/content/local-map.jpg");
+}
+.footer-form{
+	width: 580px;
+	height: 480px;
+	padding-top: 5px;
+	margin-left: 310px;
+	margin-right: 310px;
+	background-color: #8000ff;
+	position: relative;
+	bottom: 90px;
+}
+.footer-form form label{
+	display: inline-block;
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.size{
+	width: 120px;
+}
+.newsize{
+	display: inline-block;
+	margin-left: 60px;
+	margin-top: 60px;
+	width: 455px;
+	height: 60px;
+	text-align: center;
+}
+
+
+.footer-bottom{
+	background-color: rgba(255,255,255,0.5);
+}
+.footer-bottom form{
+	background-color: white;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.footer-bottom h3{
+	float: left;
+}
+
+.footer-bottom a{
+	float: right;
+	height:40px;
+	/*background-color: #ff0000;*/
+}
+.footer-bottom img{
+	height:40px;
+	width:115px;
+}
+.footer-bottom-clear{
+	clear: both;
+}
