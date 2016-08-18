@@ -3,6 +3,7 @@ body{
 	font-family: 'PT Sans';
 	margin: 0;
 	padding: 0;
+	background-color: white;
 }
 
 h5{
@@ -18,14 +19,17 @@ h3{
 .header{
 	background-color: white;
 	margin-bottom: -20px;
+	width: 1200px;
+	height: 55px;
+	margin: 0 auto;
 }
-.header-elements{
-	/*background-color: gray;*/
+/*.header-elements{
+	/*background-color: gray;
 	width: 1200px;
 	height: 55px;
 	padding-left: 0;
 	padding-right: 0;
-}
+}*/
 .nav-menu-left ul li{
 	float:left;
 	background-color: red;
@@ -46,17 +50,16 @@ h3{
 	float: left;
 	margin-left: 110px;
 }
-.nav-clear{
-	clear: both;
-}
+
 /*section in sedona-index.html*/
 .section{
 	/*background-color: #ff8000;*/
-}
-.section-elements{
-	/*background-color: #ffbf00;*/
 	width: 1200px;
+	margin: 0 auto;
 }
+/*.section-elements{
+	background-color: #ffbf00;
+}*/
 .section-top{
 	background-image: url("../img/content/welcome-sedona-image.jpg");
 	height: 770px;
@@ -95,9 +98,6 @@ h3{
 	height: 260px;
 	float: left;
 }
-.section-info-first-clear{
-	clear:both;
-}
 /*section-info in sedona-index.html level 2*/
 .section-info-second{
 	background-color: #bf00ff;
@@ -114,9 +114,6 @@ h3{
 	margin-top: 40px;
 	margin-left: 65px;
 	margin-right: 65px;
-}
-.section-info-second-clear{
-	clear: both;
 }
 
 /*section-info in sedona-index.html level 3*/
@@ -144,9 +141,7 @@ h3{
 	margin-left: 50px;
 	margin-right: 50px;
 }
-.section-info-third-clear{
-	clear: both;
-}
+
 /*section-info in sedona-index.html level 4*/
 .section-info-last{
 	background-color: #ff0040;
@@ -163,23 +158,24 @@ h3{
 	margin-left: 65px;
 	margin-right: 65px;
 }
-.section-info-last-clear{
-	clear: both;
-}
+
 .section-info-last-footer{
 	height: 295px;
 	padding-top: 65px;
 	text-align: center;
 }
+
+
 /*footer*/
 .footer{
 	/*background-color: #00ffff;*/
-	margin-top: -20px; 
-}
-.footer-elements{
 	width: 1200px;
-	/*background-color: #00bfff;*/
 	background-image: url("../img/content/local-map.jpg");
+	margin: -20px auto 0 auto;
+}
+.footer-hotel{
+	width: 1200px;
+	margin: 0 auto;
 }
 .footer-form{
 	width: 580px;
@@ -187,9 +183,15 @@ h3{
 	padding-top: 5px;
 	margin-left: 310px;
 	margin-right: 310px;
-	background-color: #8000ff;
+	background-color: rgba(255,255,255,0.7);
 	position: relative;
-	bottom: 90px;
+	bottom: 70px;
+}
+.footer-form h2{
+	margin-top: -5px;
+	/*margin: 20px 100px -15px 140px;*/
+	padding: 20px 100px 20px 130px;;
+	background-color: #8b603e;
 }
 .footer-form form label{
 	display: inline-block;
@@ -207,8 +209,6 @@ h3{
 	height: 60px;
 	text-align: center;
 }
-
-
 .footer-bottom{
 	background-color: rgba(255,255,255,0.5);
 }
@@ -219,17 +219,102 @@ h3{
 }
 .footer-bottom h3{
 	float: left;
+	width: 230px;
+	padding: 0 60px;
+	margin-right: 150px;
 }
-
 .footer-bottom a{
-	float: right;
-	height:40px;
-	/*background-color: #ff0000;*/
+	float: left;
+	background-color: blue;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 .footer-bottom img{
-	height:40px;
-	width:115px;
+	margin: 10px;
+	width: 20px;
+	height:20px;
 }
-.footer-bottom-clear{
+.htmlacademy a,
+.htmlacademy b{
+	float: right;
+	background-color: rgba(255,255,255,0);
+}
+.htmlacademy b{
+	width: 90px;
+    margin-right: -30px;
+    margin-top: 20px;
+}
+.htmlacademy img{
+	width: 115px;
+	height: 35px;
+}
+.clear{
 	clear: both;
+}
+
+
+/*section in sedona-hotels.html*/
+.header-second{
+	width: 1200px;
+	height: 240px;
+	background-image: url("../img/background/background-sedona-hotel.jpg");
+	margin: 0 auto;
+}
+.header-second-block1{
+	margin-left: -750px;
+	float: left;
+	width: 240px;
+}
+.header-second-block2{
+	margin-left: -510px;
+	float: left;
+}
+.header-second-block3{
+	float: right;
+	margin-right: -80px;
+	width: 330px;
+}
+.header-second-block3 h3{
+	text-align: left;
+}
+.footersection{
+	width: 1200px;
+	margin:0 auto; ;
+}
+
+.footersection-menu-first{
+	/*background-color: red;*/
+	border-bottom: 1px solid gray;
+	height: 85px;
+}
+.footersection-menu-first h3,
+.footersection-menu-first p,
+.footersection-menu-first li{
+	float: left;
+	width: 120px;
+	margin-top: 30px;
+}
+.footersection-menu-first h3{
+	margin-left: 30px;
+}
+
+.footersection-menu-block {
+	width: 1200px;
+	height: 150px;
+	border-bottom: 1px solid gray;
+}
+.block-one{
+	float: left;
+}
+.block-one img{
+	margin: 30px;
+	width: 135px;
+	height: 90px;
+}
+.block-two{
+	float: left;
+}
+.block-three{
+	float: right;
+	padding: 30px;
 }
