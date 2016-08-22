@@ -1,6 +1,8 @@
 body{
 	font-size: 12px;
 	color: green;
+	margin: 0;
+	padding: 0;
 	font-family: 'PT Sans';
 	font-weight: bold;
 	line-height: 10px;
@@ -26,8 +28,8 @@ h3{
 .header{
 	background-color: white;
 	width: 1200px;
-	height: 55px;
-	margin: -20px auto auto auto;
+	margin: 0 auto;
+	padding: 0;
 }
 .nav-menu-left ul li{
 	float:left;
@@ -43,7 +45,6 @@ h3{
 }
 .nav-logo img{
 	width: 140px;
-	height: 70px;
 }
 .nav-menu-right ul li{
 	background-color: red;
@@ -61,7 +62,6 @@ h3{
 .section-top{
 	background-image: url("../img/content/welcome-back.jpg");
 	background-repeat: no-repeat;
-	height: 770px;
 	width: 1200px;
 }
 .section-top-welcome{
@@ -76,11 +76,9 @@ h3{
 .section-top-footer{
 	background-color: white;
 	text-align: center;
-	height: 210px;
 }
 .section-top-footer h3{    
-	padding-top: 80px;
-    margin-top: 325px;
+    margin-top: 328px;
 }
 
 
@@ -93,7 +91,6 @@ h3{
 .section-info-first-container{
 	text-align: center;
 	width: 400px;
-	height: 20px;
 	float: left;
 }
 .section-info-first-container h3,
@@ -103,7 +100,6 @@ h3{
 }
 .section-info-first-image img{
 	width: 800px;
-	height: 260px;
 	float: left;
 }
 
@@ -119,7 +115,6 @@ h3{
 	text-align: center;
 	float: left;
 	width: 400px;
-	height: 335px;
 }
 .section-info-second-block img,
 .section-info-second-block h3,
@@ -138,16 +133,13 @@ h3{
 .section-info-third-image{
 	float: left;
 	width: 800px;
-	height:260px;
 }
 .section-info-third-image img{
 	width: 800px;
-	height: 260px;
 }
 .section-info-third-container{
 	float: left;
 	text-align: center;
-	height: 260px;
 	width: 400px;
 }
 .section-info-third-container h3,
@@ -168,7 +160,6 @@ h3{
 	text-align: center;
 	float: left;
 	width: 400px;
-	height: 260px;
 }
 .section-info-last-container h3,
 .section-info-last-container p{
@@ -178,7 +169,6 @@ h3{
 }
 
 .section-info-last-footer{
-	height: 295px;
 	padding-top: 65px;
 	text-align: center;
 	background-color: #ffffff;
@@ -190,15 +180,10 @@ h3{
 	/*background-color: #00ffff;*/
 	width: 1200px;
 	background-image: url("../img/content/local-map.jpg");
-	margin: -20px auto 0 auto;
-}
-.footer-hotel{
-	width: 1200px;
 	margin: 0 auto;
 }
 .footer-form{
 	width: 580px;
-	height: 480px;
 	padding-top: 5px;
 	margin-left: 310px;
 	margin-right: 310px;
@@ -207,7 +192,6 @@ h3{
 	bottom: 70px;
 }
 .footer-form h2{
-	margin-top: -5px;
 	padding: 20px 100px 20px 130px;;
 	background-color: #8b603e;
 }
@@ -224,8 +208,8 @@ h3{
 	margin-left: 60px;
 	margin-top: 60px;
 	width: 455px;
-	height: 60px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .footer-bottom{
 	background-color: rgba(255,255,255,0.5);
@@ -247,24 +231,20 @@ h3{
 	margin-left: 20px;
 	margin-top: 10px;
 }
-.footer-bottom img{
-	margin: 10px;
-	width: 20px;
-	height:20px;
-}
 .htmlacademy a,
 .htmlacademy b{
+	padding: 0;
+	margin-top: 20px;
 	float: right;
 	background-color: rgba(255,255,255,0);
 }
 .htmlacademy b{
-	width: 90px;
-    margin-right: -30px;
-    margin-top: 20px;
+	margin-top: 30px;
 }
 .htmlacademy img{
 	width: 115px;
-	height: 35px;
+	height: 40px;
+	margin: 0;
 }
 .clear{
 	clear: both;
@@ -274,27 +254,25 @@ h3{
 /*section in sedona-hotels.html*/
 .header-second{
 	width: 1200px;
-	height: 240px;
 	background-image: url("../img/background/background-sedona-hotel.jpg");
 	margin: 0 auto;
+	padding: 0;
 }
+
 .header-second-block1{
-	margin-left: -730px;
 	float: left;
-	width: 240px;
+	margin-left: 50px;
 }
 .header-second-block2{
-	margin-left: -510px;
 	float: left;
+	margin-left: 100px;
 }
 .header-second-block3{
 	float: right;
-	margin-right: -80px;
-	width: 330px;
+	margin-right:50px;
 }
-.header-second-block3 h3{
-	text-align: left;
-}
+
+
 .footersection{
 	width: 1200px;
 	margin:0 auto; ;
@@ -303,7 +281,6 @@ h3{
 .footersection-menu-first{
 	background-color: white;
 	border-bottom: 1px solid gray;
-	margin-top: -20px;
 	height: 85px;
 }
 .footersection-menu-first h3,
@@ -331,7 +308,6 @@ h3{
 	margin-top: 30px;
 	margin-right: 30px;
 	width: 135px;
-	height: 90px;
 }
 .block-two{
 	float: left;
@@ -340,4 +316,8 @@ h3{
 	float: right;
 	margin-top: 50px;
 	margin-right: 30px;
+}
+.footer-hotel{
+	width: 1200px;
+	margin: 0 auto;
 }
