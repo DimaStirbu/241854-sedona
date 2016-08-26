@@ -36,12 +36,20 @@
 <div class="section">
 		<div class="section-top">
 			<div class="section-top-welcome">
-				<h2>Welcome</h2>
-				<h3>to the gorgeous</h3>
+				<!-- <h2>Welcome</h2> -->
+				<img src="img/content/welcome.png">
+			</div>
+			<div class="section-top-gorgeous">
+				<!-- <h3>to the gorgeous</h3> -->
+				<img src="img/content/gorgeous.png">
 			</div>
 			<div class="section-top-sedona">
-				<h1>Sedona</h1>
-				<h2>Because the Grand Canyon sucks!<h2>
+				<!-- <h1>Sedona</h1> -->
+				<img src="img/content/sedona-word.png">
+			</div>
+			<div class="section-top-canyon">
+				<!-- <h2>Because the Grand Canyon sucks!</h2> -->
+				<img src="img/content/canyon.png">
 			</div>
 			<div class="section-top-footer">
 				<h3>Седона - небольшой город в Аризоне, заслуживающий большего!</h3>
@@ -56,11 +64,11 @@
 			<div class="section-info-first">
 				<div class="section-info-first-container">
 					<h3>Настоящий городок</h3>
-					<p>№1</p>
+					<p>- №1 -</p>
 					<p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>
 				</div>
 				<div class="section-info-first-image">
-					<img src="img/content/sedona-city.jpg">
+					<!-- <img src="img/content/sedona-city.jpg"> -->
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -86,11 +94,11 @@
 			</div>
 			<div class="section-info-third">
 				<div class="section-info-third-image">
-					<img src="img/content/sedona-landscape.jpg">
+					<!-- <img src="img/content/sedona-landscape.jpg"> -->
 				</div>
 				<div class="section-info-third-container">
 					<h3>Там есть мост дьавола</h3>
-					<p>№2</p>
+					<p>- №2 -</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="clear"></div>
@@ -98,24 +106,24 @@
 			<div class="section-info-last">
 				<div class="section-info-last-container">
 					<h3>Небольшая плошадь</h3>
-					<p>№3</p>
+					<p>- №3 -</p>
 					<p>Все достопримечательности находятся очень блиско</p>
 				</div>
 				<div class="section-info-last-container">
 					<h3>Красивая дорога</h3>
-					<p>№4</p>
+					<p>- №4 -</p>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
 				<div class="section-info-last-container">
 					<h3>Мало туристов</h3>
-					<p>№5</p>
+					<p>- №5 -</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div class="section-info-last-footer">
 					<h2>Заинтересовались?</h2>
-					<p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			</div>
 		</div>
 </div>
@@ -124,32 +132,39 @@
 			<div class="footer-form">
 				<h2>Поиск гостиницы в Седоне</h2>
 				<form>
-					<label for="datein">Дата Заезда:</label> 
-					<input id="datein" type="date">
+					<label for="date-in">Дата Заезда:</label> 
+					<input id="date-in" name="date-in" class="date-in" type="date">
 					<br>
-					<label for="dateout">Дата Выезда:</label> 
-					<input id="dateout" type="date">
+					<label for="date-out">Дата Выезда:</label> 
+					<input id="date-out" name="date-out" type="date">
 					<br>
 					<label for="adult">Взрослые:</label> 
-					<input class="size" id="adult" type="number" min="1">
+					<input id="adult" type="number" min="1">
 
-					<label for="kid">Дети:</label> 
-					<input class="size" id="kid" type="number" min="0">
+					<label for="kid" class="not">Дети:</label> 
+					<input id="kid" type="number" min="0">
 
-					<input class="newsize" type="submit" value="найти">
+					<input type="submit" value="найти">
 				</form>
 			</div>
 			<div class="footer-bottom">
-				<h3>#VisitSedona</h3>
+				<div class="footer-element">
+					<h3>#VisitSedona</h3>
+					<div class="dot">
+						<a href="#" class="social"><span class="icon-twitter"></span><!-- <img src="img/decoration/twiter.png"> -->	</a>
+						<a href="#" class="social"><span class="icon-facebook"></span><!-- <img src="img/decoration/facebook.png"> --></a>
+						<a href="#" class="social"><span class="icon-youtube"></span> <!-- <img src="img/decoration/youtube.png"> --></a>
+						<div class="clear"></div>
+					</div>
 
-				<a href="#"><img src="img/decoration/twiter.png"></a>
-				<a href="#"><img src="img/decoration/facebook.png"></a>
-				<a href="#"><img src="img/decoration/youtube.png"></a>
-
-				<div class="htmlacademy">
-					<a href="https://htmlacademy.ru/"><img src="img/decoration/htmlacademy-logo.png"></a><b>Website by:</b>
+					<div class="htmlacademy">
+						<div>
+							<b>Website by</b>
+						</div>
+							<a href="https://htmlacademy.ru/"><div><!-- <img src="img/decoration/htmlacademy-logo.png"> --></div></a> 
+					</div>
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 </div>

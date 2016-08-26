@@ -62,25 +62,27 @@
 				<input type="checkbox" id="apartment" checked>
 				<label for="apartment">Апартаменты</label>
 			</div>
-			<div class="header-second-block3">
-				<h3>Стоимость в сутки (Р):</h3>
-
-				<label for="chash"></label>
-				<input type="text" id="chash">
-				<br>
-
-				<label for="therange"></label>
-				<input type="range" id="therange">
-				<br>
-
-				<label for="know"></label>
-				<input type="button" id="know" value="показать">
+			<div class="filter-range">
+      			<div class="filter-range-title">Стоимость в сутки (р):</div>
+      				<div class="price-controls">
+        				<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        				<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      				</div>
+      				<div class="range-controls">
+        				<div class="scale">
+          					<div class="bar"></div>
+       					</div>
+        				<div class="range-toggle range-toggle-min"></div>
+        				<div class="range-toggle range-toggle-max"></div>
+      				</div>
+      			<button class="btn-transparent" type="submit">Показать</button>
 			</div>
 			<div class="clear"></div>
 		</div>
 	
 
 		<div class="footersection" >
+
 				<div class="footersection-menu-first">
 					<h3>Найдено:3</h3>
 					<p>Сортировка</p>
@@ -89,61 +91,91 @@
 						<li>По Типу</li>
 						<li>По Рейтингу</li>
 					</ul>
+					<div class="icon-down-dir"></div>
+					<div class="icon-up-dir"></div>
 				</div>
+
 			<div class="footersection-menu-block" >
 				<div class="block-one">
 					<img src="img/content/hotel-three.jpg">
 				</div>
 				<div class="block-two">
 					<h2>Amara Resort and SPA</h2>
-					<p>Гoстиница от 3500 p.</p>
-					<input type="button" value="Подробнее">
-					<input type="button" value="Забронировать">
+					<div class="block-two-section">
+						<div class="block-two-section-first">
+							<label for="info">Гoстиница</label>
+							<button type="submit" id="info">Подробнее</button>
+						</div>
+						<div class="block-two-section-last">
+							<label for="price">от 3500 p.</label>
+							<button id="price" type="submit">Забронировать</button>
+						</div>
+					</div>
 				</div>
 				<div class="block-three">
 					<p>Рейтинг:8.5</p>
 				</div>
-				<div class="clear"></div>
 			</div>
+
 			<div class="footersection-menu-block" >
 				<div class="block-one">
 					<img src="img/content/hotel-two.jpg">
 				</div>
 				<div class="block-two">
 					<h2>Desert quail inn</h2>
-					<p>Мотель от 2000 p.</p>
-					<input type="button" value="Подробнее">
-					<input type="button" value="Забронировать">
+						<div class="block-two-section">
+							<div class="block-two-section-first">
+								<label for="info">Мотель</label>
+								<button type="submit" id="info">Подробнее</button>
+							</div>
+							<div class="block-two-section-last">
+								<label for="price">от 2000 p.</label>
+								<button id="price" type="submit">Забронировать</button>
+							</div>
+						</div>
 				</div>
 				<div class="block-three">
 					<p>Рейтинг:8.9</p>
 				</div>
 			</div>
+
 			<div class="footersection-menu-block" >
 				<div class="block-one">
 					<img src="img/content/hotel-one.jpg">
 				</div>
 				<div class="block-two">
 					<h2>Villas at Poco Diablo</h2>
-					<p>Апартаменты от 4000 Р.</p>
-					<input type="button" value="Подробнее">
-					<input type="button" value="Забронировать">
+						<div class="block-two-section">
+							<div class="block-two-section-first">
+								<label for="info">Апартаменты</label>
+								<button type="submit" id="info">Подробнее</button>
+							</div>
+							<div class="block-two-section-last">
+								<label for="price">от 4000 Р.</label>
+								<button id="price" type="submit">Забронировать</button>
+							</div>
+						</div>
 				</div>
 				<div class="block-three">
 					<p>Рейтинг:9.2</p>
 				</div>
 			</div>
 		</div>
-
-			<div class="footer-hotel">
-				<div class="footer-bottom">
+			<div class="footer-down">
+				<div class="footer-element">
 					<h3>#VisitSedona</h3>
-					<a href="#"><img src="img/decoration/twiter.png"></a>
-					<a href="#"><img src="img/decoration/facebook.png"></a>
-					<a href="#"><img src="img/decoration/youtube.png"></a>
+					<div class="dot">
+						<a href="#" class="social"><span class="icon-twitter"></span><!-- <img src="img/decoration/twiter.png"> -->	</a>
+						<a href="#" class="social"><span class="icon-facebook"></span><!-- <img src="img/decoration/facebook.png"> --></a>
+						<a href="#" class="social"><span class="icon-youtube"></span> <!-- <img src="img/decoration/youtube.png"> --></a>
+						<div class="clear"></div>
+					</div>
+
 					<div class="htmlacademy">
-						<a href="https://htmlacademy.ru/"><img src="img/decoration/htmlacademy-logo.png" ></a>
-						<b>Website by:</b>
+						<div>
+							<b>Website by</b>
+						</div>
+							<a href="https://htmlacademy.ru/"><div><!-- <img src="img/decoration/htmlacademy-logo.png"> --></div></a> 
 					</div>
 					<div class="clear"></div>
 				</div>
