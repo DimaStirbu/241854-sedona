@@ -435,12 +435,15 @@ h3{
 .footer-element h3{
 	float: left;
 	text-align: center;
-	font-weight: bolder;
-	font-size: 21px;
-	text-transform: uppercase;
-	font-family: "PTSans-Bold",sans-serif;
 	width: 210px;
 	margin: 30px 0;
+}
+.footer-element h3 a {
+	font-family: "PTSans-Bold";
+	font-size: 21px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
 }
 .footer-element .dot{
 	float: left;
@@ -523,6 +526,17 @@ input[type="number"]{
 	width: 117px;
 	margin-left: 42px;
 }
+input[type="number"]::before{
+	content: "\e801";
+	font-family: "symbols-sedona";
+	font-size: 21px;
+}
+
+input[type="number"]::after{
+	content: "\e802";
+	font-family: "symbols-sedona";
+	font-size: 21px;
+}
 input[type="number"]:active{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
@@ -532,27 +546,12 @@ input[type="date"]:active{
 	background-color: #ffffff;
 }
 input[type="date"]::after {
-	position: absolute;
-	left: 490px;
+	position: relative;
 	content: "\e800";
 	font-family: "symbols-sedona";
 	font-size: 21px;
 	color: #c2c2c2;
 }
-/*input[type="date"]:hover {
-	color: #000000;
-}
-input[type="date"]:active {
-	color: #81b3d2;
-}*/
-/*input[type=number]::after{
-	content: "\e801";
-	font-family: "symbols-sedona";
-}
-input[type="number"]::before{
-	content: "\e802";
-	font-family: "symbols-sedona";
-}*/
 input[type="submit"]{
 	margin: 55px 52px;
     width: 478px;
@@ -704,8 +703,6 @@ input[type="submit"]:active{
   background: #ffffff;
 }
 
-
-
 input[type="checkbox"]{
 	display: none;
 }
@@ -762,7 +759,6 @@ input[type="checkbox"]:checked+label:active{
 	margin-top: 30px;	
 	font-family:"PTSans-Bold";
 	font-size: 21px;
-	/*text-shadow: 0 0 1px;*/
 }
 .footersection-menu-first p{
 	font-family:"PTSans-Regular";
@@ -772,20 +768,22 @@ input[type="checkbox"]:checked+label:active{
 	margin-top: 35px;
 }
 .footersection-menu-first li{
-	font-family:"PTSans-Regular";
 	list-style: none;
-	font-size: 12px;
 	margin-right: 40px;
-	margin-top: 35px;
+	margin-top: 30px;
 	text-decoration: none;
+}
+.footersection-menu-first li a {
+	text-decoration: none;
+	font-family:"PTSans-Regular";
 	font-size: 12px;
 	color: #c7c7c7;
 	border-bottom: 1px dashed #81b3d2;
 }
-.footersection-menu-first li:hover{
+.footersection-menu-first li a:hover{
 	color: #81b3d2;
 }
-.footersection-menu-first li:active{
+.footersection-menu-first li a:active{
 	color: #000000;
 	border: 0;
 }
@@ -835,15 +833,17 @@ input[type="checkbox"]:checked+label:active{
 .block-two{
 	float: left;
 }
-.block-two h2{
+.block-two h2 a{
+	text-decoration: none;
 	font-size: 21px;
 	margin-top: 25px;
 	font-family:"PTSans-Bold";
+	color: #000000;
 }
-.block-two h2:hover{
+.block-two h2 a:hover{
 	color: #81b3d2;
 }
-.block-two h2:active{
+.block-two h2 a:active{
 	color: #b2b2b2;
 }
 
@@ -863,6 +863,20 @@ input[type="checkbox"]:checked+label:active{
 	width: 110px;
 	margin-left: 7px;
 }
+.block-two-section-first .button-info{
+	width: 110px;
+	margin-top: 13px;
+}
+.block-two-section-first .button-info a{
+	width: 110px;
+	background-color: #81b3d2;
+	font-family: "PTSans-Bold";
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	padding: 5px 17px;
+	margin-top: 10px; 
+}
 .block-two-section button{
 	height: 28px;
 	margin-top: 10px; 
@@ -871,25 +885,19 @@ input[type="checkbox"]:checked+label:active{
 	color: #ffffff;
 	font-size: 14px;
 }
-.block-two-section-first button{
-	width: 110px;
-	background-color: #81b3d2;
-	border: 0;
-	border-radius: 0;
-}
 .block-two-section-last button{
 	width: 143px;
 	background-color: #766357;
 	border: 0;
 	border-radius: 0;
 }
-.block-two-section-first button:hover{
+.block-two-section-first a:hover{
 	background-color: #669ec0;
 }
 .block-two-section-last button:hover{
 	background-color: #604e43;
 }
-.block-two-section-first button:active{
+.block-two-section-first a:active{
 	background-color: #5496bd;
 	color: #88b6d1;
 }
