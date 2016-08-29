@@ -407,6 +407,7 @@ h3{
 	width: 569px;
 	background-color: #ffffff;
 	position: relative;
+	top: 15px;
 	left: 320px;
 }
 
@@ -423,7 +424,7 @@ h3{
 	margin-left: 25px;
 }
 .footer-bottom{
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.7);
 	margin-top: 200px;
 }
 .footer-down{
@@ -521,6 +522,10 @@ input[type="number"]{
 	height: 28px;
 	width: 117px;
 	margin-left: 42px;
+}
+input[type="number"]:active{
+	background:: 2px solid #e5e5e5;
+	background-color: #ffffff;
 }
 input[type="date"]:active{
 	background:: 2px solid #e5e5e5;
