@@ -19,6 +19,26 @@ h3{
 	line-height: 30px;
 }*/
 
+/*PTSans*/
+@font-face{
+	font-family: "PTSans-Regular";
+	src: url("../fonts/ptsans.woff") format("woff"),
+		url("../fonts/ptsans.woff2") format("woff2");
+}
+/*@font-face{
+	font-family: "PTSans-Regular-Bold";
+	src: url("../fonts/ptsans.woff2") format("woff2");
+}*/
+@font-face{
+	font-family: "PTSans-Bold";
+	src: url("../fonts/ptsansbold.woff") format("woff"),
+		url("../fonts/ptsansbold.woff2") format("woff2");
+}
+/*@font-face{
+	font-family: "PTSans-Bold-Bold";
+	src: url("../fonts/ptsansbold.woff2") format("woff2");
+}*/
+
 
 /*sedona-symbols*/
 @font-face {
@@ -60,7 +80,7 @@ h3{
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-/**sedona-symbols/
+
 
 
 
@@ -74,30 +94,24 @@ h3{
 	width: 1200px;
 	min-height: 57px;
 	margin: 0 auto;
+	/*padding: 0;*/
+}
+.nav-menu-left ul,
+.nav-menu-right ul{
+	margin: 0;
 	padding: 0;
 }
 .nav-menu-left ul li{
 	list-style: none;
 	float:left;
-	width: 128px;
-	height:56px;
 	text-align: center;
-	padding-top: 22px;
-	text-shadow: 0 0 1px;
+	padding: 23px 78px 23px 70px;
 }
-.nav-menu-left ul li:last-child{
-	margin-left: 110px;
-}
-.nav-menu-left ul li:first-child{
-	margin-left: 0;
-}
-
 .nav-menu-left a,
 .nav-menu-right a{
 	text-decoration: none;
-	font-family: "PTSans Bold", sans-serif;
+	font-family: "PTSans-Bold";
 	font-size: 14px;
-	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -111,26 +125,22 @@ h3{
 }
 .nav-logo{
 	float: left;
-	margin: auto 120px;
+	margin: auto 52px auto 60px;
 }
 .nav-logo img{
-	height: 71px;
+	/*height: 71px;*/
 }
 
 .nav-menu-right ul li{
 	list-style: none;
 	float: left;
-	width: 128px;
-	height:56px;
-	padding-top: 22px;
-	text-shadow: 0 0 1px;
+	text-align: center;
+	padding: 23px 70px 23px 78px;
 }
-.nav-menu-right ul li:first-child{
-	margin-right: 110px;
-}
-.nav-menu-right ul li:last-child{
-	margin-right: 0;
-}
+
+
+
+
 /*section in sedona-index.html*/
 .section{
 	width: 1200px;
@@ -165,23 +175,24 @@ h3{
 	background-image: url("../img/content/background-fon.png");
 	text-align: center;
 	background-repeat: no-repeat;
-    margin-top: 44px;
+    margin-top: 36px;
 }
 .section-top-footer h3{
 	padding-top: 109px;
 	margin:0 360px;
 	margin-bottom: 40px;
 	width: 470px;
-    font-family: "PTSans Regular", sans-serif;
+    font-family: "PTSans-Bold";
     font-weight: bolder;
 	font-size: 21px;
 	text-transform: uppercase;
-	text-shadow: 0 0 1px;
+	/*text-shadow: 0 0 1px;*/
 }
 .section-top-footer p{
-	padding-bottom: 60px;
+	margin: 0;
+	padding-bottom: 50px;
 	color: #333333;
-	font-family: "PTSans Regular", sans-serif;
+	font-family: "PTSans-Regular";
 	font-size: 14px;
 	color: #696969;
 	text-transform: uppercase;
@@ -195,33 +206,34 @@ h3{
 	background-color: #81b3d2;
 	height: 257px;
 	width: 1200px;
-	margin-top: -15px;
 }
 .section-info-first-container{
 	text-align: center;
 	width: 400px;
 	height: 257px;
 	float: left;
-	font-family: "PTSans Regular", sans-serif;
+	font-family: "PTSans-Regular",sans-serif;
 	color: #f2f2f2;
 	text-transform: uppercase;
 }
 
 .section-info-first-container h3{
-	margin-left: 100px;
-    margin-right: 100px;
+	margin-left: 95px;
+    margin-right: 95px;
     margin-top: 47px;
     margin-bottom: 30px;
     font-size:21px;
 }
-
+.section-info-first-container p{
+	color: #ddebf3;
+}
 
 .section-info-first-container p:last-child{
 	margin-top: 30px;
 	margin-bottom: 47px;
-	margin-left: 35px;
-	margin-right: 35px;
-	font-size: 12px;
+	margin-left: 55px;
+	margin-right: 55px;
+	font-size: 14px;
 }
 .section-info-first-image{
 	background-image: url("../img/content/sedona-city.jpg");
@@ -245,22 +257,22 @@ h3{
 	text-align: center;
 	float: left;
 	width: 400px;
-	font-family: "PTSans Regular",sans-serif;
+	font-family: "PTSans-Regular";
 }
 .section-info-second-block img{
 	margin-top: 62px;
 }
 .section-info-second-block h3{
-	font-family: "PTSans Bold", sans-serif;
+	font-family: "PTSans-Bold";
 	font-size: 21px;
 	font-weight: bolder;
 	margin: 32px auto;
-	text-shadow: 0 0 1px;
+	/*text-shadow: 0 0 1px;*/
 }
 .section-info-second-block p{
 	color: #4e4e4e;
 	line-height: 20px;
-	font-size: 12px;
+	font-size: 14px;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-bottom: 90px;
@@ -289,13 +301,14 @@ h3{
 	float: left;
 	text-align: center;
 	width: 400px;
-	font-family: "PTSans Regular", sans-serif;
+	font-family: "PTSans-Regular",sans-serif;
 	color: #eef5f9;
 }
 .section-info-third-container h3{
+	font-family: "PTSans-Bold";
 	margin-top: 50px;
-	margin-left: 113px;
-	margin-right: 113px;
+	margin-left: 124px;
+	margin-right: 125px;
 	margin-bottom: 30px;
 	color: #ffffff;
 	font-size: 21px;
@@ -304,9 +317,9 @@ h3{
 	font-size: 14px;
 }
 .section-info-third-container p:last-child{
-	margin: 30px 10px;
+	margin: 30px 40px;
 	color: #ddebf3;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 25px;
 }
 
@@ -323,22 +336,20 @@ h3{
 	width: 400px;
 	height: 257px;
 	text-transform: uppercase;
-	font-family: "PTSans Regular", sans-serif;
+	font-family: "PTSans-Regular", sans-serif;
 }
 .section-info-last-container h3{
 	margin-top: 52px;
 	margin-right: 140px;
 	margin-left: 140px;
-	/*margin-bottom: 30px;*/
-	font-family: "PTSans Bold", sans-serif;
+	font-family: "PTSans-Bold";
 	font-size: 21px;
-	text-shadow: 0 0 1px;
 }
 .section-info-last-container p:last-child{
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 65px;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: 60px;
+	margin-right: 60px;
 	word-spacing: 2px;
 	line-height: 25px;
 	color: #656565;
@@ -347,23 +358,41 @@ h3{
 
 .section-info-last-footer{
 	text-transform: uppercase;
-    padding: 32px 320px 119px 320px;
+    padding: 32px 320px 0 320px;
 	text-align: center;
 	background-color: #ffffff;
+	font-family: "PTSans-Regular";
 }
 .section-info-last-footer h2{
-	font-family: "PTSans Regular", sans-serif;
 	font-weight: normal;
-	font-size: 31px;
+	font-size: 30px;
 }
 .section-info-last-footer p{
-	font-family: "PTSans Regular", sans-serif;
-	margin-top: 30px;
-	font-size: 12px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-size: 14px;
 	line-height: 25px;
 	color: #333333;
 }
+.section-info-last-footer button{
+	display: inline-block;
+	font-family: "PTSans-Bold";
+    text-transform: uppercase;
+    width: 569px;
+    height: 86px;
+    font-size: 21px;
+	background-color: #766357;
+	color:#ffffff;
+	border: 0;
+}
 
+.section-info-last-footer button:hover{
+	background-color: #604e43;
+}
+.section-info-last-footer button:active{
+	background-color: #503e33;
+	color: #857871;
+}
 
 /*footer*/
 .footer{
@@ -375,39 +404,27 @@ h3{
 	margin: 0 auto;
 }
 .footer-form{
-	width: 580px;
+	width: 569px;
 	background-color: #ffffff;
 	position: relative;
-	bottom: 85px;
-	left: 310px;
+	left: 320px;
 }
-.footer-form h2{
-	margin: 0;
-	display: inline-block;
-	font-family: "PTSans Bold",sans-serif;
-    text-transform: uppercase;
-    padding: 30px 123px;
-    font-size: 21px;
-	background-color: #8b603e;
-	color:#ffffff;
-	text-shadow: 0 0 1px;
-}
+
 .footer-form form label{
 	display: inline-block;
 	margin-left: 60px;
 	margin-top: 50px;
 	font-weight: bolder;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
-	font-family: "PTSans Bold",sans-serif;
-	font-weight: bolder;
+	font-family: "PTSans-Regular";
 }
 .footer-form form label.not{
 	margin-left: 25px;
 }
 .footer-bottom{
 	background-color: rgba(255,255,255,0.5);
-	margin-top: 127px;
+	margin-top: 200px;
 }
 .footer-down{
 	width: 1200px;
@@ -420,7 +437,7 @@ h3{
 	font-weight: bolder;
 	font-size: 21px;
 	text-transform: uppercase;
-	font-family: "PTSans Bold",sans-serif;
+	font-family: "PTSans-Bold",sans-serif;
 	width: 210px;
 	margin: 30px 0;
 }
@@ -461,7 +478,8 @@ h3{
 	vertical-align: middle;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: "PTSans Regular",sans-serif;
+	font-family: "PTSans-Regular";
+	font-size: 14px;
 	font-weight: normal;
 	margin: 10px;
 }
@@ -502,6 +520,28 @@ input[type="number"]{
 	width: 117px;
 	margin-left: 42px;
 }
+input[type="date"]::after {
+	position: absolute;
+	left: 500px;
+	content: "\e800";
+	font-family: "symbols-sedona";
+	font-size: 21px;
+	color: #c2c2c2;
+}
+input[type="date"]:hover {
+	color: #000000;
+}
+input[type="date"]:active {
+	color: #81b3d2;
+}
+/*input[type=number]::after{
+	content: "\e801";
+	font-family: "symbols-sedona";
+}
+input[type="number"]::before{
+	content: "\e802";
+	font-family: "symbols-sedona";
+}*/
 input[type="submit"]{
 	margin: 55px 52px;
     width: 478px;
@@ -511,7 +551,7 @@ input[type="submit"]{
     color: #ffffff;
     background-color: #81b3d2;
 	text-transform: uppercase;
-	font-family: "PTSans Regular",sans-serif;
+	font-family: "PTSans-Regular";
 }
 
 input[type="submit"]:hover{
@@ -537,11 +577,11 @@ input[type="submit"]:active{
 
 .header-second-block1{
 	float: left;
-	margin-left: 50px;
+	margin-left: 70px;
 }
 .header-second-block2{
 	float: left;
-	margin-left: 100px;
+	margin-left: 70px;
 }
 .filter-range{
 	float: right;
@@ -554,7 +594,7 @@ input[type="submit"]:active{
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family:"PTSans regular", sans-serif;
+  font-family:"PTSans-Regular";
 }
 .filter-range-title {
   margin-bottom: 9px;
@@ -653,6 +693,8 @@ input[type="submit"]:active{
   background: #ffffff;
 }
 
+
+
 input[type="checkbox"]{
 	display: none;
 }
@@ -661,12 +703,9 @@ input[type="checkbox"]+label{
 	position: relative;
 	cursor: pointer;
 	line-height: 10px;
-	margin: 5px 0;
+	margin: 10px 0;
 	padding-left: 40px;
-	font-size: 13px;
-	text-shadow: 0 0 1px #ffffff;
-	/*margin-top: 5px;*/
-	/*margin-bottom:5px;*/
+	font-size: 14px;
 }
 input[type="checkbox"]+label::before{
 	content: "\2610";
@@ -683,11 +722,9 @@ input[type="checkbox"]:checked+label::before{
 }
 input[type="checkbox"]+label:active{
 	color: #6a6a6a;
-	text-shadow: 0 0 0
 }
 input[type="checkbox"]:checked+label:active{
 	color: #6a6a6a;
-	text-shadow: 0 0 0
 }
 
 
@@ -695,7 +732,7 @@ input[type="checkbox"]:checked+label:active{
 .footersection{
 	width: 1200px;
 	margin:0 auto;
-	font-family:"PTSans regular", sans-serif;
+	font-family:"PTSans-Regular";
 	text-transform: uppercase;
 }
 
@@ -710,24 +747,27 @@ input[type="checkbox"]:checked+label:active{
 	float: left;
 }
 .footersection-menu-first h3{
-	margin-left: 50px;
-	margin-top: 30px;
-	text-shadow: 0 0 1px;
+	margin-left: 70px;
+	margin-top: 30px;	
+	font-family:"PTSans-Bold";
+	font-size: 21px;
+	/*text-shadow: 0 0 1px;*/
 }
 .footersection-menu-first p{
+	font-family:"PTSans-Regular";
 	font-size: 12px;
-	font-weight: bold;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 35px;
 }
 .footersection-menu-first li{
+	font-family:"PTSans-Regular";
 	list-style: none;
+	font-size: 12px;
 	margin-right: 40px;
 	margin-top: 35px;
 	text-decoration: none;
-	font-size: 10px;
-	font-weight: bold;
+	font-size: 12px;
 	color: #c7c7c7;
 	border-bottom: 1px dashed #81b3d2;
 }
@@ -770,6 +810,7 @@ input[type="checkbox"]:checked+label:active{
 	height: 150px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #e5e5e5;
+	font-family:"PTSans-Regular";
 }
 .block-one{
 	float: left;
@@ -786,7 +827,7 @@ input[type="checkbox"]:checked+label:active{
 .block-two h2{
 	font-size: 21px;
 	margin-top: 25px;
-	font-family:"PTSans Bold",sans-serif;
+	font-family:"PTSans-Bold";
 }
 .block-two h2:hover{
 	color: #81b3d2;
@@ -796,8 +837,8 @@ input[type="checkbox"]:checked+label:active{
 }
 
 .block-two label{
-	font-size: 12px;
-	font-family:"PTSans Regular",sans-serif;
+	font-size: 14px;
+	font-family:"PTSans-Regular";
 }
 .block-two-section{
 	width:230px;
@@ -815,10 +856,9 @@ input[type="checkbox"]:checked+label:active{
 	height: 28px;
 	margin-top: 10px; 
 	text-transform: uppercase;
-	font-family: "PTSans Bold",sans-serif;
+	font-family: "PTSans-Bold";
 	color: #ffffff;
-	font-weight: bold;
-	text-shadow: 0 0 1px;
+	font-size: 14px;
 }
 .block-two-section-first button{
 	width: 110px;
@@ -855,10 +895,11 @@ input[type="checkbox"]:checked+label:active{
 	background-color: #f2f2f2;
 }
 .block-three p{
-	font-size: 12px;
 	color: #8b8b8b;
-	margin: 8px;
+	margin: 5px;
 	text-align: center;
+	font-family: "PTSans-Regular";
+	font-size: 14px;
 }
 .footer-hotel{
 	width: 1200px;
