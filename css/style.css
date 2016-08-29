@@ -511,29 +511,35 @@ input[type="date"].date-in{
 	margin-left: 27px;
 }
 input[type="date"]{
+	font-family: "PTSans-Bold";
 	height: 28px;
 	width: 345px;
 	margin-left: 22px;
 }
 input[type="number"]{
+	font-family: "PTSans-Bold";
 	height: 28px;
 	width: 117px;
 	margin-left: 42px;
 }
+input[type="date"]:active{
+	background:: 2px solid #e5e5e5;
+	background-color: #ffffff;
+}
 input[type="date"]::after {
 	position: absolute;
-	left: 500px;
+	left: 490px;
 	content: "\e800";
 	font-family: "symbols-sedona";
 	font-size: 21px;
 	color: #c2c2c2;
 }
-input[type="date"]:hover {
+/*input[type="date"]:hover {
 	color: #000000;
 }
 input[type="date"]:active {
 	color: #81b3d2;
-}
+}*/
 /*input[type=number]::after{
 	content: "\e801";
 	font-family: "symbols-sedona";
