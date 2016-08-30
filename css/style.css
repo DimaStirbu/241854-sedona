@@ -112,6 +112,7 @@ h3{
 	text-decoration: none;
 	font-family: "PTSans-Bold";
 	font-size: 14px;
+	font-weight: 26px;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -184,7 +185,7 @@ h3{
 	margin-bottom: 40px;
 	width: 470px;
     font-family: "PTSans-Bold";
-    font-weight: bolder;
+    font-weight: 26px;
 	font-size: 21px;
 	text-transform: uppercase;
 	/*text-shadow: 0 0 1px;*/
@@ -213,7 +214,7 @@ h3{
 	width: 400px;
 	height: 257px;
 	float: left;
-	font-family: "PTSans-Regular",sans-serif;
+	font-family: "PTSans-Regular";
 	color: #f2f2f2;
 	text-transform: uppercase;
 }
@@ -224,6 +225,7 @@ h3{
     margin-top: 47px;
     margin-bottom: 30px;
     font-size:21px;
+    font-weight: 21px;
 }
 .section-info-first-container p{
 	color: #ddebf3;
@@ -266,7 +268,7 @@ h3{
 .section-info-second-block h3{
 	font-family: "PTSans-Bold";
 	font-size: 21px;
-	font-weight: bolder;
+	font-weight: 21px;
 	margin: 32px auto;
 	/*text-shadow: 0 0 1px;*/
 }
@@ -292,7 +294,7 @@ h3{
 .section-info-third-image{
 	float: left;
 	width: 800px;
-	height: 279px;
+	height: 296px;
 	background-image: url("../img/content/sedona-landscape.jpg");
 	background-repeat: no-repeat;
 	background-size: 800px;
@@ -313,6 +315,7 @@ h3{
 	margin-bottom: 30px;
 	color: #ffffff;
 	font-size: 21px;
+	font-weight: 21px;
 }
 .section-info-third-container-p-one{
 	font-size: 14px;
@@ -327,17 +330,13 @@ h3{
 
 /*section-info in sedona-index.html level 4*/
 
-/*
-.section-info-last{
-	background-color: #ff0040;
-}*/
 .section-info-last-container{
 	text-align: center;
 	float: left;
 	width: 400px;
 	height: 257px;
 	text-transform: uppercase;
-	font-family: "PTSans-Regular", sans-serif;
+	font-family: "PTSans-Regular";
 }
 .section-info-last-container h3{
 	margin-top: 52px;
@@ -345,6 +344,7 @@ h3{
 	margin-left: 140px;
 	font-family: "PTSans-Bold";
 	font-size: 21px;
+	font-weight: 26px;
 }
 .section-info-last-container p:last-child{
 	font-size: 14px;
@@ -382,6 +382,7 @@ h3{
     width: 569px;
     height: 86px;
     font-size: 21px;
+    font-weight: 21px;
 	background-color: #766357;
 	color:#ffffff;
 	border: 0;
@@ -421,6 +422,9 @@ h3{
 	background-color: rgb(255,255,255);
 }
 .footer-element h3{
+	font-family: "PTSans-Bold";
+	font-size: 14px;
+	font-weight: 26px;
 	float: left;
 	text-align: center;
 	width: 210px;
@@ -428,7 +432,8 @@ h3{
 }
 .footer-element h3 a {
 	font-family: "PTSans-Bold";
-	font-size: 21px;
+	font-size: 19px;
+	font-weight: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
@@ -537,10 +542,6 @@ form input[type="text"]:active{
 	background-color: #ffffff;
 }
 form>div>.person{
-	font-family: "PTSans-Bold";
-	text-transform: uppercase;
-	color: #000000;
-	font-size: 14px;
 	height: 30px;
 	width: 40px;
 	padding: 0;
@@ -573,7 +574,6 @@ form div label{
 	float: left;
 	margin-left: 50px;
 	margin-top: 50px;
-	font-weight: bold;
 	font-size: 14px;
 	font-weight: 26px;
 	text-transform: uppercase;
@@ -808,6 +808,7 @@ input[type="checkbox"]:checked+label:active{
 	margin-top: 30px;	
 	font-family:"PTSans-Bold";
 	font-size: 21px;
+	font-weight: 26px;
 }
 .footersection-menu-first p{
 	font-family:"PTSans-Regular";
@@ -885,6 +886,7 @@ input[type="checkbox"]:checked+label:active{
 .block-two h2 a{
 	text-decoration: none;
 	font-size: 21px;
+	font-weight: 26px;
 	margin-top: 25px;
 	font-family:"PTSans-Bold";
 	color: #000000;
@@ -920,6 +922,7 @@ input[type="checkbox"]:checked+label:active{
 	width: 110px;
 	background-color: #81b3d2;
 	font-family: "PTSans-Bold";
+	font-weight: 21px;
 	text-decoration: none;
 	font-size: 14px;
 	color: white;
@@ -931,6 +934,7 @@ input[type="checkbox"]:checked+label:active{
 	margin-top: 10px; 
 	text-transform: uppercase;
 	font-family: "PTSans-Bold";
+	font-weight: 21px;
 	color: #ffffff;
 	font-size: 14px;
 }
