@@ -413,7 +413,7 @@ h3{
 
 .footer-form form label{
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 50px;
 	margin-top: 50px;
 	font-weight: bolder;
 	font-size: 14px;
@@ -421,11 +421,11 @@ h3{
 	font-family: "PTSans-Regular";
 }
 .footer-form form label.not{
-	margin-left: 25px;
+	margin-left: 60px;
 }
 .footer-bottom{
 	background-color: rgba(255,255,255,0.7);
-	margin-top: 200px;
+	margin-top: 180px;
 }
 .footer-down{
 	width: 1200px;
@@ -507,6 +507,17 @@ h3{
 }
 
 /*form*/
+form,
+form div:not(div:nth-child(3)):not(div:nth-child(4)){
+	width: 560px;
+	margin: 0 auto;
+}
+form div:nth-child(3){
+	float: left;
+}
+form div:nth-child(4){
+	float: left;
+}
 input{
 	background-color: #f2f2f2;
 	border: 0;
@@ -516,26 +527,17 @@ input[type="date"].date-in{
 }
 input[type="date"]{
 	font-family: "PTSans-Bold";
-	height: 28px;
-	width: 345px;
+	text-transform: uppercase;
+	height: 38px;
+	width: 310px;
 	margin-left: 22px;
+	margin-top: 40px;
 }
 input[type="number"]{
 	font-family: "PTSans-Bold";
 	height: 28px;
-	width: 117px;
-	margin-left: 42px;
-}
-input[type="number"]::before{
-	content: "\e801";
-	font-family: "symbols-sedona";
-	font-size: 21px;
-}
-
-input[type="number"]::after{
-	content: "\e802";
-	font-family: "symbols-sedona";
-	font-size: 21px;
+	width: 40px;
+	margin-top: 42px;
 }
 input[type="number"]:active{
 	background:: 2px solid #e5e5e5;
@@ -545,17 +547,10 @@ input[type="date"]:active{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
 }
-input[type="date"]::after {
-	position: relative;
-	content: "\e800";
-	font-family: "symbols-sedona";
-	font-size: 21px;
-	color: #c2c2c2;
-}
 input[type="submit"]{
-	margin: 55px 52px;
-    width: 478px;
-    height: 48px;
+	margin: 56px 50px;
+    width: 458px;
+    height: 58px;
     text-align: center;
     font-size: 21px;
     color: #ffffff;
@@ -563,7 +558,6 @@ input[type="submit"]{
 	text-transform: uppercase;
 	font-family: "PTSans-Regular";
 }
-
 input[type="submit"]:hover{
 	background-color: #669ec0;
     color: #ffffff;
@@ -571,6 +565,54 @@ input[type="submit"]:hover{
 input[type="submit"]:active{
 	background-color: #5496bd;
     color: #88b6d1;
+}
+.footer>.footer-form>form>.not{
+	margin-left: 51px;
+}
+.footer>.footer-form>form>.not+.btn-minus{
+	margin-left: 28px;
+}
+form div label{
+	float: left;
+}
+form div input[type="date"],
+form div input[type="number"]{
+	float: left;
+}
+.btn-calendar{
+	float: left;
+	height: 38px;
+	margin-top: 40px;
+	background-color: #f2f2f2;
+	color: #a9a9a9;
+	border:0;
+}
+.btn-minus{
+	float: left;
+	margin-left:42px;
+	margin-top: 42px;
+    height: 30px;
+    border: 0;
+    background-color: #f2f2f2;
+    color: #a9a9a9;
+}
+.btn-plus{
+	margin-top: 42px;
+	float: left;
+	height: 30px;
+    border: 0;
+    background-color: #f2f2f2;
+    color: #a9a9a9;
+}
+.btn-calendar:hover,
+.btn-minus:hover,
+.btn-plus:hover{
+	color: #000000;
+}
+.btn-calendar:active,
+.btn-minus:active,
+.btn-plus:active{
+	color: #81b3d2;
 }
 
 /*section in sedona-hotels.html*/

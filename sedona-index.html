@@ -132,20 +132,29 @@
 		<div class="footer">
 			<div class="footer-form">
 				<form>
-					<label for="date-in">Дата Заезда:</label> 
-					<input id="date-in" name="date-in" class="date-in" type="date">
-					<br>
-					
-					<label for="date-out">Дата Выезда:</label> 
-					<input id="date-out" name="date-out" class="date-out" type="date">
-					<br>
-					
-					<label for="adult">Взрослые:</label> 
-					<input id="adult" type="number" min="1">
-					
-					<label for="kid" class="not">Дети:</label> 
-					<input id="kid" type="number" min="0">
-					
+					<div>
+						<label for="date-in">Дата Заезда:</label> 
+						<input id="date-in" name="date-in" class="date-in" type="date" placeholder="24 апреля 2016">
+						<button class="icon-calendar btn-calendar"></button>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<label for="date-out">Дата Выезда:</label> 
+						<input id="date-out" name="date-out" class="date-out" type="date" placeholder="4 июля 2016">
+						<button class="icon-calendar btn-calendar"></button>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<label for="adult">Взрослые:</label> 
+						<button class="icon-minus btn-minus"></button><input id="adult" type="number" min="1"><button class="icon-plus btn-plus"></button>
+						<div class="clear"></div>
+					</div>
+					<div>	
+						<label for="kid" class="not">Дети:</label>
+						<button class="icon-minus btn-minus"></button><input id="kid" type="number" min="0"><button class="icon-plus btn-plus"></button>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
 					<div>
 						<input type="submit" value="найти">
 					</div>
