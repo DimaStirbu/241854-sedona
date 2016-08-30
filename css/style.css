@@ -522,30 +522,35 @@ input{
 	background-color: #f2f2f2;
 	border: 0;
 }
-input[type="date"].date-in{
+input[type="text"].date-in{
 	margin-left: 27px;
 }
-input[type="date"]{
+input[type="text"]:not(.person){
 	font-family: "PTSans-Bold";
 	text-transform: uppercase;
+	color: #000000;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-top: 0;
 	height: 38px;
-	width: 310px;
+	width: 295px;
 	margin-left: 22px;
 	margin-top: 40px;
 }
-input[type="number"]{
+input[type="text"]:active{
+	background:: 2px solid #e5e5e5;
+	background-color: #ffffff;
+}
+
+form>div>.person{
 	font-family: "PTSans-Bold";
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14px;
 	height: 28px;
 	width: 40px;
 	margin-top: 42px;
-}
-input[type="number"]:active{
-	background:: 2px solid #e5e5e5;
-	background-color: #ffffff;
-}
-input[type="date"]:active{
-	background:: 2px solid #e5e5e5;
-	background-color: #ffffff;
+	text-align: center;
 }
 input[type="submit"]{
 	margin: 56px 50px;
@@ -575,17 +580,17 @@ input[type="submit"]:active{
 form div label{
 	float: left;
 }
-form div input[type="date"],
-form div input[type="number"]{
+form div input[type="text"]{
 	float: left;
 }
 .btn-calendar{
 	float: left;
-	height: 38px;
+	height: 39px;
 	margin-top: 40px;
 	background-color: #f2f2f2;
 	color: #a9a9a9;
 	border:0;
+	font-size: 18px;
 }
 .btn-minus{
 	float: left;
