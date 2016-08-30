@@ -135,7 +135,7 @@ h3{
 	list-style: none;
 	float: left;
 	text-align: center;
-	padding: 23px 70px 23px 78px;
+	padding: 23px 60px 23px 78px;
 }
 
 
@@ -151,6 +151,7 @@ h3{
 	background-repeat: no-repeat;
 	width: 1200px;
 	background-size: 1200px;
+	height: 790px;
 }
 .section-top-welcome{
 	padding-top: 130px;
@@ -501,7 +502,13 @@ form div{
 }
 .count-person{
 	float: left;
-	width: 275px;
+	width: 270px;
+}
+.one{
+	width: 285px;
+}
+.not+.btn-minus{
+	margin-left: 25px;
 }
 input{
 	background-color: #f2f2f2;
