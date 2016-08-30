@@ -525,7 +525,7 @@ input{
 input[type="text"].date-in{
 	margin-left: 27px;
 }
-input[type="text"]:not(.person){
+input[type="text"]:not(.person):not(.min-price-input):not(.max-price-input){
 	font-family: "PTSans-Bold";
 	text-transform: uppercase;
 	color: #000000;
@@ -537,7 +537,7 @@ input[type="text"]:not(.person){
 	margin-left: 22px;
 	margin-top: 40px;
 }
-input[type="text"]:active{
+input[type="text"]:not(.min-price-input):not(.max-price-input):active{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
 }
