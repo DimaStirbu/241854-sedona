@@ -228,7 +228,7 @@ h3{
 	color: #ddebf3;
 }
 
-.section-info-first-container p:last-child{
+.section-info-first-container-p-one{
 	margin-top: 30px;
 	margin-bottom: 47px;
 	margin-left: 55px;
@@ -313,10 +313,10 @@ h3{
 	color: #ffffff;
 	font-size: 21px;
 }
-.section-info-third-container p:first-child{
+.section-info-third-container-p-one{
 	font-size: 14px;
 }
-.section-info-third-container p:last-child{
+.section-info-third-container-p-two{
 	margin: 30px 40px;
 	color: #ddebf3;
 	font-size: 14px;
@@ -499,11 +499,7 @@ form div{
 	width: 560px;
 	margin: 0 auto;
 }
-form div:nth-child(3){
-	float: left;
-	width: 275px;
-}
-form div:nth-child(4){
+.count-person{
 	float: left;
 	width: 275px;
 }
