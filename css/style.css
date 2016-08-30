@@ -407,22 +407,9 @@ h3{
 	width: 569px;
 	background-color: #ffffff;
 	position: relative;
-	top: 15px;
 	left: 320px;
 }
 
-.footer-form form label{
-	display: inline-block;
-	margin-left: 50px;
-	margin-top: 50px;
-	font-weight: bolder;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-family: "PTSans-Regular";
-}
-.footer-form form label.not{
-	margin-left: 60px;
-}
 .footer-bottom{
 	background-color: rgba(255,255,255,0.7);
 	margin-top: 180px;
@@ -508,51 +495,53 @@ h3{
 
 /*form*/
 form,
-form div:not(div:nth-child(3)):not(div:nth-child(4)){
+form div{
 	width: 560px;
 	margin: 0 auto;
 }
 form div:nth-child(3){
 	float: left;
+	width: 275px;
 }
 form div:nth-child(4){
 	float: left;
+	width: 275px;
 }
 input{
 	background-color: #f2f2f2;
 	border: 0;
 }
-input[type="text"].date-in{
-	margin-left: 27px;
-}
-input[type="text"]:not(.person):not(.min-price-input):not(.max-price-input){
+
+form input[type="text"]{
 	font-family: "PTSans-Bold";
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 15px;
 	padding-top: 0;
 	height: 38px;
 	width: 295px;
 	margin-left: 22px;
 	margin-top: 40px;
+	float: left;
 }
-input[type="text"]:not(.min-price-input):not(.max-price-input):active{
+form input[type="text"]:active{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
 }
-
 form>div>.person{
 	font-family: "PTSans-Bold";
 	text-transform: uppercase;
 	color: #000000;
 	font-size: 14px;
-	height: 28px;
+	height: 30px;
 	width: 40px;
+	padding: 0;
+	margin-left: 0;
 	margin-top: 42px;
 	text-align: center;
 }
-input[type="submit"]{
+.btn-find{
 	margin: 56px 50px;
     width: 458px;
     height: 58px;
@@ -561,27 +550,25 @@ input[type="submit"]{
     color: #ffffff;
     background-color: #81b3d2;
 	text-transform: uppercase;
-	font-family: "PTSans-Regular";
+	font-family: "PTSans-Bold";
+	border: 0;
 }
-input[type="submit"]:hover{
+.btn-find:hover{
 	background-color: #669ec0;
     color: #ffffff;
 }
-input[type="submit"]:active{
+.btn-find:active{
 	background-color: #5496bd;
     color: #88b6d1;
 }
-.footer>.footer-form>form>.not{
-	margin-left: 51px;
-}
-.footer>.footer-form>form>.not+.btn-minus{
-	margin-left: 28px;
-}
 form div label{
 	float: left;
-}
-form div input[type="text"]{
-	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "PTSans-Bold";
 }
 .btn-calendar{
 	float: left;
