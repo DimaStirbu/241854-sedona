@@ -512,7 +512,8 @@ form input[type="text"]{
 	font-family: "PTSans-Bold";
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: 26px;
 	padding-left: 15px;
 	padding-top: 0;
 	height: 38px;
@@ -520,6 +521,9 @@ form input[type="text"]{
 	margin-left: 22px;
 	margin-top: 40px;
 	float: left;
+}
+form>div>.date-in{
+	margin-left: 25px;
 }
 form input[type="text"]:active{
 	background:: 2px solid #e5e5e5;
@@ -543,6 +547,7 @@ form>div>.person{
     height: 58px;
     text-align: center;
     font-size: 21px;
+    font-weight: 26px;
     color: #ffffff;
     background-color: #81b3d2;
 	text-transform: uppercase;
@@ -563,6 +568,7 @@ form div label{
 	margin-top: 50px;
 	font-weight: bold;
 	font-size: 14px;
+	font-weight: 26px;
 	text-transform: uppercase;
 	font-family: "PTSans-Bold";
 }
@@ -574,6 +580,8 @@ form div label{
 	color: #a9a9a9;
 	border:0;
 	font-size: 18px;
+	font-size: 14px;
+	font-weight: 26px;
 }
 .btn-minus{
 	float: left;
@@ -583,6 +591,8 @@ form div label{
     border: 0;
     background-color: #f2f2f2;
     color: #a9a9a9;
+    font-size: 14px;
+    font-weight: 26px;
 }
 .btn-plus{
 	margin-top: 42px;
@@ -591,6 +601,8 @@ form div label{
     border: 0;
     background-color: #f2f2f2;
     color: #a9a9a9;
+    font-size: 14px;
+    font-weight: 26px;
 }
 .btn-calendar:hover,
 .btn-minus:hover,
