@@ -507,13 +507,16 @@ form div{
 }
 .count-person{
 	float: left;
-	width: 270px;
+	width: 275px;
 }
 .one{
 	width: 285px;
 }
+.not{
+	margin-left: 46px;
+}
 .not+.btn-minus{
-	margin-left: 25px;
+	margin-left: 30px;
 }
 input{
 	background-color: #f2f2f2;
@@ -530,29 +533,29 @@ form input[type="text"]{
 	padding-top: 0;
 	height: 38px;
 	width: 295px;
-	margin-left: 22px;
+	margin-left: 19px;
 	margin-top: 40px;
 	float: left;
 }
 form>div>.date-in{
-	margin-left: 25px;
+	margin-left: 22px;
 }
 form input[type="text"]:active{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
 }
-form>div>.person{
-	height: 30px;
-	width: 40px;
+form div .person{
+	height: 38px;
+	width: 38px;
 	padding: 0;
 	margin-left: 0;
 	margin-top: 42px;
 	text-align: center;
 }
 .btn-find{
-	margin: 56px 50px;
+	/*margin: 56px;*/
     width: 458px;
-    height: 58px;
+    height: 60px;
     text-align: center;
     font-size: 21px;
     font-weight: 26px;
@@ -570,9 +573,12 @@ form>div>.person{
 	background-color: #5496bd;
     color: #88b6d1;
 }
+.section-button-find{
+	padding:  56px;
+}
 form div label{
 	float: left;
-	margin-left: 50px;
+	margin-left: 55px;
 	margin-top: 50px;
 	font-size: 14px;
 	font-weight: 26px;
@@ -582,6 +588,7 @@ form div label{
 .btn-calendar{
 	float: left;
 	height: 39px;
+	width: 38px;
 	margin-top: 40px;
 	background-color: #f2f2f2;
 	color: #a9a9a9;
@@ -594,7 +601,8 @@ form div label{
 	float: left;
 	margin-left:42px;
 	margin-top: 42px;
-    height: 30px;
+    height: 38px;
+    width: 38px;
     border: 0;
     background-color: #f2f2f2;
     color: #a9a9a9;
@@ -604,7 +612,8 @@ form div label{
 .btn-plus{
 	margin-top: 42px;
 	float: left;
-	height: 30px;
+	height: 38px;
+	width: 38px;
     border: 0;
     background-color: #f2f2f2;
     color: #a9a9a9;
