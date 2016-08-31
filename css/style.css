@@ -1,7 +1,8 @@
 body{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	background-color: #f2f2f2;
+	max-width: 1200px;
 }
 
 
@@ -62,7 +63,25 @@ body{
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
 
+@media(max-width: 1200px){
+	.nav-menu-left ul li{
+	    padding: 23px 50px 23px 20px;
+	    /*display: none;*/
+	}
 
+	.nav-menu-right ul li{    
+		padding: 23px 6px 23px 78px;
+	}
+	.section-top-footer{
+		min-width: 768px;
+	}
+	/*.section-info-first{
+		max-width: 768px;
+	}*/
+	.section-info-first-container{
+
+	}
+}
 
 
 
@@ -71,13 +90,14 @@ body{
 /*header*/
 .header{
 	background-color: white;
-	width: 1200px;
+	max-width: 1200px;
 	min-height: 57px;
+	min-width: 768px;
 	margin: 0 auto;
 }
 .nav-menu-left ul,
 .nav-menu-right ul{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 .nav-menu-left ul li{
@@ -123,20 +143,21 @@ body{
 
 /*section in sedona-index.html*/
 .section{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .section-top{
 	background-image: url("../img/content/welcome-sedona-image-second.jpg");
 	background-repeat: no-repeat;
 	background-size: 1200px;
-
-	width: 1200px;
+	min-width: 768px;
+	max-width: 1200px;
 	height: 790px;
 }
 .section-top-welcome{
 	padding-top: 130px;
 	text-align: center;
+	width: 1200px;
 }
 .section-top-gorgeous{
 	text-align: center;
@@ -189,7 +210,7 @@ body{
 .section-info-first{
 	background-color: #81b3d2;
 	height: 257px;
-	width: 1200px;
+	max-width: 1200px;
 }
 .section-info-first-container{
 	text-align: center;
@@ -346,7 +367,7 @@ body{
 
 
 .section-info-last-footer{
-    padding: 32px 320px 0 320px;
+    /*padding: 32px 320px 0 320px;*/
 	text-align: center;
 	background-color: #ffffff;
 
@@ -390,7 +411,7 @@ body{
 
 /*footer*/
 .footer{
-	width: 1200px;
+	max-width: 1200px;
 	height: 666px;
 
 	background-image: url("../img/content/local-map.jpg");
@@ -403,7 +424,8 @@ body{
 	width: 569px;
 	background-color: #ffffff;
 	position: relative;
-	left: 320px;
+	/*left: 320px;*/
+	margin: 0 auto;
 }
 
 .footer-bottom{
@@ -411,15 +433,15 @@ body{
 	margin-top: 180px;
 }
 .footer-down{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	background-color: rgb(255,255,255);
 }
 .footer-element h3{
 	float: left;
 	text-align: center;
-	width: 210px;
-	margin: 30px 0;
+	/*width: 210px;*/
+	margin: 30px auto;
 }
 .footer-element h3 a {
 	font-family: "PTSans-Bold","Arial",sans-serif;
@@ -540,7 +562,7 @@ form input[type="text"]{
 form>div>.date-in{
 	margin-left: 22px;
 }
-form input[type="text"]:active{
+form input[type="text"]:focus{
 	background:: 2px solid #e5e5e5;
 	background-color: #ffffff;
 }
@@ -653,7 +675,7 @@ form div label{
 
 /*section in sedona-hotels.html*/
 .header-second{
-	width: 1200px;
+	max-width: 1200px;
 	height: 220px;
 
 	background-image: url("../img/background/background-sedona-hotel.jpg");
@@ -695,7 +717,7 @@ form div label{
 }
 .filter-range-title {
   margin-bottom: 9px;
-  
+
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -828,7 +850,7 @@ input[type="checkbox"]:checked+label:active{
 
 /**/
 .footersection{
-	width: 1200px;
+	max-width: 1200px;
 	margin:0 auto;
 	font-family:"PTSans-Regular","Tahoma",sans-serif;
 	text-transform: uppercase;
@@ -911,7 +933,7 @@ input[type="checkbox"]:checked+label:active{
 
 
 .footersection-menu-block {
-	width: 1200px;
+	max-width: 1200px;
 	height: 150px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #e5e5e5;
@@ -1037,6 +1059,6 @@ input[type="checkbox"]:checked+label:active{
 	font-size: 14px;
 }
 .footer-hotel{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
