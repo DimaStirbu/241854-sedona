@@ -1,8 +1,8 @@
 body{
 	margin: 0 auto;
-	padding: 0;
+	/*padding: 0;*/
 	background-color: #f2f2f2;
-	max-width: 1200px;
+	width: 1200px;
 }
 
 
@@ -62,24 +62,122 @@ body{
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
+@media(max-width: 768px){
+	body{
+		margin: 0;
+	}
+}
 
-@media(max-width: 1200px){
-	.nav-menu-left ul li{
+
+@media(max-width: 1190px){
+	body{
+		max-width: 768px;
+		/*margin: auto;*/
+	}
+	.header{
+		width: 768px;
+	}
+	.header .nav-menu-left ul li{
+		padding: 0;
 	    padding: 23px 50px 23px 20px;
 	    /*display: none;*/
 	}
-
-	.nav-menu-right ul li{    
-		padding: 23px 6px 23px 78px;
+	.header .nav-logo{
+		margin: 0;
 	}
-	.section-top-footer{
-		min-width: 768px;
+	.header .nav-menu-right ul li{    
+		padding: 0;
+		padding: 23px 6px 23px 55px;
 	}
-	/*.section-info-first{
+	.section,
+	.section .section-top-welcome,
+	.footer{
 		max-width: 768px;
-	}*/
-	.section-info-first-container{
+	}
+	.section .section-top,
+	.section .section-top-footer{
+	    background-size: 768px;
+	}
+	.section .section-top{
+		height: 625px;
+	}
+	.section .section-top-welcome{
+		padding-top: 61px;
+	}
+	.section .section-top-footer h3{
+		padding-top: 54px;
+    	margin: 0 auto;
+	}
+	.section .section-top-footer h3{
+    	margin: 20px auto;
+	}
+	.section-info-first-container,
+	.section-info-second-block,
+	.section-info-third-container,
+	.section-info-last-container{
+		max-width: 253px;
+	}
+	.section .section-info-first-container h3{
+		margin: 30px 0;
+	}
+	.section .section-info-first-container p{
+		margin: 20px;
+	}
+	.section-info-first-image,
+	.section .section-info-third-image {
+		max-width: 515px;
+		background-size: 515px;
+	}
+	.section .section-info-second-block p{
+		line-height: 20px;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: 20px;
+	}
+	.section .section-info-third,
+	.section .section-info-third-image{
+		height: 182px;
+	}
+	.section .section-info-third-container h3{
+		margin-top: 15px;
+    	margin-left: 20px;
+    	margin-right: 20px;
+    	margin-bottom: 15px;
+	}
+	.section .section-info-third-container-p-two{
+		margin: 15px 30px;
+		line-height: 15px;
+	}
+	.section .section-info-last-container h3{
+		margin: 20px 47px;
+	}
+	.section .section-info-last-container p:last-child{
+		line-height: 20px;
+    	margin: 25px 20px;
+	}
+	.footer .footer-bottom .footer-element h3,
+	.footer-down .footer-element h3{
+		margin: 10px;
+	}
+	.footer .footer-bottom .footer-element .dot,
+	.footer-down .footer-element .dot{
+		margin: 5px auto auto 90px;
+	}
+	.footer .footer-bottom .footer-element .htmlacademy,
+	.footer-down .footer-element .htmlacademy{
+		margin-top: 5px;
+		margin-right: 40px;
+	}
 
+	/*sedona-hotel.html*/
+	.header-second .header-second-block1{
+		margin-left: 20px;
+	}
+	.header-second .header-second-block2{
+		margin-left: 40px;
+	}
+	.footersection .footersection-menu-first .icon-down-dir{
+		margin-right: 30px;
 	}
 }
 
@@ -143,7 +241,8 @@ body{
 
 /*section in sedona-index.html*/
 .section{
-	max-width: 1200px;
+	/*max-width: 1200px;*/
+	width: 1200px;
 	margin: 0 auto;
 }
 .section-top{
@@ -367,7 +466,7 @@ body{
 
 
 .section-info-last-footer{
-    /*padding: 32px 320px 0 320px;*/
+    padding-top: 32px ;
 	text-align: center;
 	background-color: #ffffff;
 
@@ -411,7 +510,8 @@ body{
 
 /*footer*/
 .footer{
-	max-width: 1200px;
+	/*max-width: 1200px;*/
+	width: 1200px;
 	height: 666px;
 
 	background-image: url("../img/content/local-map.jpg");
@@ -448,13 +548,14 @@ body{
 	font-size: 19px;
 	font-weight: 26px;
 	color: #000000;
+	margin-left: 75px;
 
 	text-transform: uppercase;
 	text-decoration: none;
 }
 .footer-element .dot{
 	float: left;
-	margin: 20px 220px auto 310px;
+	margin: 20px auto auto 310px;
 }
 .footer-element .dot a{
 	float: left;
@@ -483,7 +584,7 @@ body{
 .htmlacademy{
 	float:right;
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 35px;
 }
 .htmlacademy div:first-child{
 	float: left;
