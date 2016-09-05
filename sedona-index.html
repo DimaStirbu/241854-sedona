@@ -118,47 +118,87 @@
 			<div class="section-info-last-footer">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<button class="find-hotel">Поиск гостиницы в Седоне</button>
+				<button class="find-hotel" type="button" id="button-display" onclick="Display()">Поиск гостиницы в Седоне</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer">
-		<div class="footer-form footer-show">
-			<form>
+	<div class="footer" >
+	<div class="style-form">
+		<div class="footer-form hide" id="display-form">
+			<form method="post">
 				<div>
 					<label for="date-in">Дата Заезда:</label> 
-					<input id="date-in" name="date-in" class="date-in" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="24 апреля 2016">
+					<input id="date-in" name="date-in" class="date-in" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="24 апреля 2016" required>
 					<button class="icon-calendar btn-calendar" type="button"></button>
 					<div class="clear"></div>
 				</div>
 				<div>
 					<label for="date-out">Дата Выезда:</label> 
-					<input id="date-out" name="date-out" class="date-out" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="4 июля 2016">
+					<input id="date-out" name="date-out" class="date-out" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="4 июля 2016" required>
 					<button class="icon-calendar btn-calendar" type="button"></button>
 					<div class="clear"></div>
 				</div>
 				<div class="count-person one">
 					<label for="adult">Взрослые:</label> 
 					<button class="icon-minus btn-minus" type="button"></button>
-					<input id="adult" class="person" type="text" pattern="[0-9]{1}" value="2">
+					<input id="adult" name="adult" class="person" type="text" pattern="[0-9]{1}" value="2" required>
 					<button class="icon-plus btn-plus" type="button"></button>
 					<div class="clear"></div>
 				</div>
 				<div class="count-person two">	
 					<label for="kid" class="not">Дети:</label>
 					<button class="icon-minus btn-minus" type="button"></button>
-					<input id="kid" class="person" type="text" pattern="[0-9]{1}" value="0">
-					<button class="icon-plus btn-plus" type="button"></button>
+					<input id="kid" name="kid" class="person" type="text" pattern="[0-9]{1}" value="0" required>
+					<button class="icon-plus btn-plus" type="button" onclick="clickCounter()"></button>
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>
 				<div class="section-button-find">
-					<button class="btn-find" type="button">найти</button>
+					<button class="btn-find" id="button-submit" type="submit">найти</button>
 				</div>
 			</form>
 		</div>
-		
+	</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.2453598638506!2d-111.7994566052752!3d34.86411164509009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1deced55577bd216!2sSedona+Rouge+Hotel+%26+Spa!5e0!3m2!1sen!2s!4v1472830495896" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<script>
+	function Display(){
+		document.getElementById("display-form").classList.toggle('show');
+		document.getElementById("display-form").classList.toggle('hide');
+	}
+
+// 	function clickCounter() {
+//     if(typeof(Storage) !== "undefined") {
+//         if (localStorage.clickcount) {
+//             localStorage.clickcount = Number(localStorage.clickcount)+1;
+//         } else {
+//             localStorage.clickcount = 1;
+//         }
+//         document.getElementById("kid").value =  localStorage.clickcount;
+//     } else {
+//         document.getElementById("kid").innerHTML = "Sorry, your browser does not support web storage...";
+//     }
+// }
+	// var btn = document.getElementById("form");
+	// var input_in = document.getElementById("name=[date-in]");
+	// var input_out = document.getElementById("name=[date-out]");
+	// var input_adult = document.getElementById("name=[adult]");
+	// var input_kid = document.getElementById("name=[kid]");
+	
+	
+
+	// btn.addEventListner("submit", function(event){
+	// 	if(!input_kid.value){
+	// 		event.preventDefault();
+	// 		console.log("Insert a value")
+	// 	}else{
+	// 		localStorage.setItem("input-kid",input_kid.value)
+	// 	}
+	// })
+</script>
+
+
 		<div class="footer-bottom">
 			<div class="footer-element">
 				<h3><a href="#">#VisitSedona</a></h3>
@@ -179,6 +219,5 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>
