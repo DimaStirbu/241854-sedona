@@ -1,6 +1,5 @@
 body{
 	margin: 0 auto;
-	/*padding: 0;*/
 	background-color: #f2f2f2;
 	width: 1200px;
 }
@@ -62,30 +61,6 @@ body{
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
-/*@media(max-width: 768px){
-	body{
-		margin: 0;
-	}
-}*/
-
-@keyframes mymove {
-	0%{
-		transform: rotate(75deg);
-  	}
-  	30%  {
-		transform: rotate(150deg);;
-  	}
-  	60%  {
-		transform: rotate(220deg);;
-  	}
-  	90% {
-		transform: rotate(295deg);;
-  	}
-  	100%{
-		transform: rotate(360deg);;
-  	}
-}
-
 
 @media(max-width: 1190px){
 	body{
@@ -97,7 +72,6 @@ body{
 	.header .nav-menu-left ul li{
 		padding: 0;
 	    padding: 23px 50px 23px 20px;
-	    /*display: none;*/
 	}
 	.header .nav-logo{
 		margin: 0;
@@ -211,10 +185,9 @@ body{
 
 /*header*/
 .header{
-	background-color: white;
+	background-color: #ffffff;
 	max-width: 1200px;
 	min-height: 57px;
-	min-width: 768px;
 	margin: 0 auto;
 }
 .nav-menu-left ul,
@@ -252,6 +225,7 @@ body{
 .nav-menu-right ul li{
 	list-style: none;
 	text-align: center;
+
 	float: left;
 	padding: 23px 60px 23px 78px;
 }
@@ -323,8 +297,6 @@ body{
 
 
 /*section-info in sedona-index.html level 1*/
-
-
 .section-info-first{
 	background-color: #81b3d2;
 	height: 257px;
@@ -367,6 +339,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: 800px;
 	background-position: 0 -80px;
+
 	float: left;
 	width: 800px;
 	height: 257px;
@@ -381,10 +354,11 @@ body{
 }
 
 .section-info-second-block{
-	text-align: center;
 	float: left;
 	width: 400px;
+
 	font-family: "PTSans-Regular","Tahoma",sans-serif;
+	text-align: center;
 	color: #414141;
 	font-size: 14px;
 	font-weight: 21px;
@@ -409,8 +383,6 @@ body{
 
 
 /*section-info in sedona-index.html level 3*/
-
-
 .section-info-third{
 	background-color: #81b3d2;
 }
@@ -418,6 +390,7 @@ body{
 	float: left;
 	width: 800px;
 	height: 296px;
+
 	background-image: url("../img/content/sedona-landscape.jpg");
 	background-repeat: no-repeat;
 	background-size: 800px;
@@ -452,7 +425,6 @@ body{
 
 
 /*section-info in sedona-index.html level 4*/
-
 .section-info-last-container{
 	text-align: center;
 	float: left;
@@ -482,8 +454,6 @@ body{
 
 	line-height: 25px;
 }
-
-
 .section-info-last-footer{
     padding-top: 32px ;
 	text-align: center;
@@ -547,7 +517,6 @@ iframe{
 }
 
 .footer-form{
-	/*display: none;*/
 	width: 569px;
 	background-color: #ffffff;
 	position: absolute;
@@ -565,15 +534,8 @@ iframe{
 
 }
 
-
-/*.display{
-	display: block;
-	animation-name: mymove;
-	animation-duration: 50s;
-}*/
 .footer .footer-bottom{
 	background-color: rgba(255,255,255,0.7);
-    /*bottom: 445px;*/
     position: relative;
     height: 84px; 
     margin-top: -88px;
@@ -586,7 +548,6 @@ iframe{
 .footer-element h3{
 	float: left;
 	text-align: center;
-	/*width: 210px;*/
 	margin: 30px auto;
 }
 .footer-element h3 a {
@@ -594,10 +555,10 @@ iframe{
 	font-size: 19px;
 	font-weight: 26px;
 	color: #000000;
-	margin-left: 75px;
-
 	text-transform: uppercase;
 	text-decoration: none;
+
+	margin-left: 75px;
 }
 .footer-element .dot{
 	float: left;
@@ -607,9 +568,10 @@ iframe{
 	float: left;
 	width: 40px;
 	height: 40px;
-	background-color: #81b3d2;
 	margin-left: 5px;
+	
 	text-align:center;
+	background-color: #81b3d2;
 }
 .footer-element .dot a span{
 	font-size: 21px;	
@@ -634,8 +596,8 @@ iframe{
 }
 .htmlacademy div:first-child{
 	float: left;
-	text-align: center;
 
+	text-align: center;
 	text-transform: uppercase;
 	font-family: "PTSans-Regular","Tahoma",sans-serif;
 	font-size: 19px;
@@ -665,8 +627,6 @@ iframe{
 }
 
 /*form*/
-
-
 form,
 form div{
 	width: 560px;
@@ -693,9 +653,9 @@ input{
 form input[type="text"]{
 	font-family: "PTSans-Bold","Arial",sans-serif;
 	text-transform: uppercase;
-	color: #000000;
 	font-size: 14px;
 	font-weight: 26px;
+	color: #000000;
 
 	padding-left: 15px;
 	padding-top: 0;
@@ -720,7 +680,6 @@ form div .person{
 	width: 38px;
 
 	padding: 0;
-
 	margin-left: 0;
 	margin-top: 42px;
 
@@ -750,7 +709,6 @@ form div .person{
     color: #88b6d1;
 }
 .section-button-find{
-	/*padding:  56px;*/
 	text-align: center;
 }
 form div label{
@@ -758,11 +716,11 @@ form div label{
 	margin-left: 55px;
 	margin-top: 50px;
 
-	color: #000000;
+	font-family: "PTSans-Bold","Arial",sans-serif;
+	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 26px;
-	text-transform: uppercase;
-	font-family: "PTSans-Bold","Arial",sans-serif;
+	color: #000000;
 }
 .btn-calendar{
 	float: left;
@@ -775,9 +733,9 @@ form div label{
 	background-color: #f2f2f2;
 	border:0;
 
-	color: #c2c2c2;
 	font-size: 14px;
 	font-weight: 26px;
+	color: #c2c2c2;
 }
 .btn-minus{
 	float: left;
@@ -789,12 +747,11 @@ form div label{
     width: 38px;
 
     border: 0;
-
     background-color: #f2f2f2;
 
-    color: #a9a9a9;
     font-size: 14px;
     font-weight: 26px;
+    color: #a9a9a9;
 }
 .btn-plus{
 	margin-top: 42px;
@@ -835,9 +792,9 @@ form div label{
 
 	font-family:"PTSans-Regular","Tahoma", sans-serif;
 	text-transform: uppercase;
-	color: #ffffff;
 	font-size: 14px;
 	font-weight: 21px;
+	color: #ffffff;
 }
 
 .header-second-block1{
@@ -861,16 +818,16 @@ form div label{
   margin-right:50px;
   margin-top: 20px;
 
-  color: #ffffff;
-  text-transform: uppercase;
   font-family:"PTSans-Regular","Tahoma",sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .filter-range-title {
   margin-bottom: 9px;
 
+  line-height: 21px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 21px;
 }
 .price-controls {
   position: relative;
@@ -972,9 +929,10 @@ input[type="checkbox"]+label{
 	display: block;
 	position: relative;
 	cursor: pointer;
-	line-height: 10px;
 	margin: 10px 0;
 	padding-left: 40px;
+
+	line-height: 10px;
 	font-size: 14px;
 }
 input[type="checkbox"]+label::before{
@@ -984,6 +942,7 @@ input[type="checkbox"]+label::before{
 	left: 0;
 	width: 10px;
 	height: 10px;
+
 	font-family: "symbols-sedona";
 	font-size: 26px;
 }
@@ -998,10 +957,11 @@ input[type="checkbox"]:checked+label:active{
 }
 
 
-/**/
+/*file sedona-hotel.html*/
 .footersection{
 	max-width: 1200px;
 	margin:0 auto;
+
 	font-family:"PTSans-Regular","Tahoma",sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -1035,13 +995,13 @@ input[type="checkbox"]:checked+label:active{
 }
 .footersection-menu-first li{
 	list-style: none;
+	text-decoration: none;
+
 	margin-right: 40px;
 	margin-top: 35px;
-	text-decoration: none;
 }
 .footersection-menu-first li a {
 	text-decoration: none;
-
 	color: #c7c7c7;
 	border-bottom: 1px dashed #81b3d2;
 }
@@ -1092,20 +1052,20 @@ input[type="checkbox"]:checked+label:active{
 	float: left;
 }
 .block-one img{
+	width: 135px;
 	margin-left: 70px;
 	margin-top: 30px;
 	margin-right: 30px;
-	width: 135px;
 }
 .block-two{
 	float: left;
 	padding-top: 10px;
 }
 .block-two h2 a{
+	font-family:"PTSans-Bold","Arial",sans-serif;
 	text-decoration: none;
 	font-size: 21px;
 	font-weight: 26px;
-	font-family:"PTSans-Bold","Arial",sans-serif;
 	color: #000000;
 
 	margin-top: 25px;
@@ -1141,9 +1101,9 @@ input[type="checkbox"]:checked+label:active{
 	background-color: #81b3d2;
 
 	font-family:"PTSans-Bold","Arial",sans-serif;
-	font-weight: 21px;
 	text-decoration: none;
 	font-size: 14px;
+	font-weight: 21px;
 	color: #ffffff;
 
 	padding: 5px 17px;
@@ -1151,16 +1111,16 @@ input[type="checkbox"]:checked+label:active{
 }
 
 .block-two-section-last button{
+	width: 143px;
 	height: 28px;
 	margin-top: 10px; 
 
-	text-transform: uppercase;
 	font-family:"PTSans-Bold","Arial",sans-serif;
+	text-transform: uppercase;
 	font-weight: 21px;
 	color: #ffffff;
 	font-size: 14px;
 
-	width: 143px;
 	background-color: #766357;
 	border: 0;
 	border-radius: 0;
@@ -1188,10 +1148,10 @@ input[type="checkbox"]:checked+label:active{
 	margin-right: 73px;
 }
 .stars{
-	text-align: right;
-
 	height: 45px;
     padding-top: 28px;
+
+	text-align: right;
 }
 .stars span{
 	color: #81b3d2;
@@ -1199,14 +1159,14 @@ input[type="checkbox"]:checked+label:active{
 }
 .block-three p{
 	background-color: #f2f2f2;
-	color: #8b8b8b;
 
 	width: 111px;
 	height: 27px;
 	padding-top: 5px;
-	text-align: center;
 
+	text-align: center;
 	font-size: 14px;
+	color: #8b8b8b;
 }
 .footer-hotel{
 	max-width: 1200px;

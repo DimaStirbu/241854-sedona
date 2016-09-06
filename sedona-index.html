@@ -7,30 +7,30 @@
 
 <body>
 	<div class="header">
-			<div class="nav-menu-left">
-				<ul>
-					<li>
-						<a href="#">Информация</a>
-					</li>
-					<li>
-						<a href="#">Фото и видео</a>
-					</li>
-				</ul>
-			</div>
-			<div class="nav-logo">
-				<img src="img/decoration/logo-sedona-second.png">
-			</div>
-			<div class="nav-menu-right">
-				<ul>
-					<li>
-						<a href="#">Карта штата</a>
-					</li>
-					<li>
-						<a href="#">Гостиницы</a>
-					</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
+		<div class="nav-menu-left">
+			<ul>
+				<li>
+					<a href="#">Информация</a>
+				</li>
+				<li>
+					<a href="#">Фото и видео</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-logo">
+			<img src="img/decoration/logo-sedona-second.png">
+		</div>
+		<div class="nav-menu-right">
+			<ul>
+				<li>
+					<a href="#">Карта штата</a>
+				</li>
+				<li>
+					<a href="#">Гостиницы</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
 	</div>
 
 	<div class="section">
@@ -52,9 +52,6 @@
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
 			</div>
 		</div>
-	
-		
-
 		<div class="section-info">
 			<div class="section-info-first">
 				<div class="section-info-first-container">
@@ -65,8 +62,6 @@
 				<div class="section-info-first-image"></div>
 				<div class="clear"></div>
 			</div>
-
-
 			<div class="section-info-second">
 				<div class="section-info-second-block">
 					<img src="img/decoration/the-house.png">
@@ -85,7 +80,6 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-
 			<div class="section-info-third">
 				<div class="section-info-third-image"></div>
 				<div class="section-info-third-container">
@@ -95,7 +89,6 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-
 			<div class="section-info-last">
 				<div class="section-info-last-container">
 					<h3>Небольшая плошадь</h3>
@@ -114,7 +107,6 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-
 			<div class="section-info-last-footer">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -122,49 +114,45 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="footer" >
-	<div class="style-form">
-		<div class="footer-form hide" id="display-form">
-			<form method="post">
-				<div>
-					<label for="date-in">Дата Заезда:</label> 
-					<input id="date-in" name="date-in" class="date-in" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="24 апреля 2016" required>
-					<button class="icon-calendar btn-calendar" type="button"></button>
+		<div class="style-form">
+			<div class="footer-form hide" id="display-form">
+				<form method="post">
+					<div>
+						<label for="date-in">Дата Заезда:</label> 
+						<input id="date-in" name="date-in" class="date-in" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="24 апреля 2016" required>
+						<button class="icon-calendar btn-calendar" type="button"></button>
+						<div class="clear"></div>
+					</div>
+					<div>
+						<label for="date-out">Дата Выезда:</label> 
+						<input id="date-out" name="date-out" class="date-out" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="4 июля 2016" required>
+						<button class="icon-calendar btn-calendar" type="button"></button>
+						<div class="clear"></div>
+					</div>
+					<div class="count-person one">
+						<label for="adult">Взрослые:</label> 
+						<button class="icon-minus btn-minus" type="button"></button>
+						<input id="adult" name="adult" class="person" type="text" pattern="[0-9]{1}" value="2" required>
+						<button class="icon-plus btn-plus" type="button"></button>
+						<div class="clear"></div>
+					</div>
+					<div class="count-person two">	
+						<label for="kid" class="not">Дети:</label>
+						<button class="icon-minus btn-minus" type="button"></button>
+						<input id="kid" name="kid" class="person" type="text" pattern="[0-9]{1}" value="0" required>
+						<button class="icon-plus btn-plus" type="button" onclick="clickCounter()"></button>
+						<div class="clear"></div>
+					</div>
 					<div class="clear"></div>
-				</div>
-				<div>
-					<label for="date-out">Дата Выезда:</label> 
-					<input id="date-out" name="date-out" class="date-out" type="text" pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" value="4 июля 2016" required>
-					<button class="icon-calendar btn-calendar" type="button"></button>
-					<div class="clear"></div>
-				</div>
-				<div class="count-person one">
-					<label for="adult">Взрослые:</label> 
-					<button class="icon-minus btn-minus" type="button"></button>
-					<input id="adult" name="adult" class="person" type="text" pattern="[0-9]{1}" value="2" required>
-					<button class="icon-plus btn-plus" type="button"></button>
-					<div class="clear"></div>
-				</div>
-				<div class="count-person two">	
-					<label for="kid" class="not">Дети:</label>
-					<button class="icon-minus btn-minus" type="button"></button>
-					<input id="kid" name="kid" class="person" type="text" pattern="[0-9]{1}" value="0" required>
-					<button class="icon-plus btn-plus" type="button" onclick="clickCounter()"></button>
-					<div class="clear"></div>
-				</div>
-				<div class="clear"></div>
-				<div class="section-button-find">
-					<button class="btn-find" id="button-submit" type="submit">найти</button>
-				</div>
-			</form>
+					<div class="section-button-find">
+						<button class="btn-find" id="button-submit" type="submit">найти</button>
+					</div>
+				</form>
+			</div>
 		</div>
-	</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.2453598638506!2d-111.7994566052752!3d34.86411164509009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1deced55577bd216!2sSedona+Rouge+Hotel+%26+Spa!5e0!3m2!1sen!2s!4v1472830495896" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-	<script src="js/javascript.js"></script>
-
-
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.2453598638506!2d-111.7994566052752!3d34.86411164509009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1deced55577bd216!2sSedona+Rouge+Hotel+%26+Spa!5e0!3m2!1sen!2s!4v1472830495896" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<script src="js/javascript.js"></script>
 		<div class="footer-bottom">
 			<div class="footer-element">
 				<h3><a href="#">#VisitSedona</a></h3>
@@ -185,5 +173,6 @@
 				<div class="clear"></div>
 			</div>
 		</div>
+	</div>
 </body>
 </html>
