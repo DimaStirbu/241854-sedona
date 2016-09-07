@@ -514,6 +514,7 @@ body{
 iframe{
 	width: 1200px;
 	height: 666px;
+	border: 0;
 }
 
 .footer-form{
