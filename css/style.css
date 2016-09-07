@@ -1028,9 +1028,9 @@ input[type="checkbox"]:checked+label:active{
 
 	font-size: 23px;
 	color: #cccccc;
+	text-decoration: none;
 
 	margin-top: 30px;
-	
 }
 .footersection-menu-first .icon-down-dir:hover,
 .footersection-menu-first .icon-up-dir:hover{
