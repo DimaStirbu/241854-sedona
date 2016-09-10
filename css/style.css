@@ -1,52 +1,40 @@
-
-
 body{
-	margin: 0 auto;
-	background-color: #f2f2f2;
-	width: 1200px;
+margin: 0 auto;
+background-color: #f2f2f2;
+width: 1200px;
 }
-
-
-/*PTSans*/
 @font-face{
-	font-family: "PTSans-Regular";
-	src: url("../fonts/ptsans.woff") format("woff"),
-	url("../fonts/ptsans.woff2") format("woff2");
+font-family: "PTSans-Regular";
+src: url("../fonts/ptsans.woff") format("woff"),
+url("../fonts/ptsans.woff2") format("woff2");
 }
-
 @font-face{
-	font-family: "PTSans-Bold";
-	src: url("../fonts/ptsansbold.woff") format("woff"),
-	url("../fonts/ptsansbold.woff2") format("woff2");
+font-family: "PTSans-Bold";
+src: url("../fonts/ptsansbold.woff") format("woff"),
+url("../fonts/ptsansbold.woff2") format("woff2");
 }
-
-
-
-/*sedona-symbols*/
 @font-face {
-	font-weight: normal;font-style: normal;
-	font-family: "symbols-sedona";src: url("../fonts/symbols-sedona.woff") format("woff"),
-	url("../fonts/symbols-sedona.woff2") format("woff2");
+font-weight: normal;font-style: normal;
+font-family: "symbols-sedona";src: url("../fonts/symbols-sedona.woff") format("woff"),
+url("../fonts/symbols-sedona.woff2") format("woff2");
 }
-
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-	display: inline-block;
-	vertical-align: none;
-	width: 1em;
-	margin-right: 0.2em;
-	margin-left: 0.2em;
-	font-weight: normal;
-	line-height: 1em;
-	font-family: "symbols-sedona";
-	text-align: center;
-	text-transform: none;
-	text-decoration: inherit;
-	font-style: normal;
-	font-variant: normal;
-	speak: none;
+display: inline-block;
+vertical-align: none;
+width: 1em;
+margin-right: 0.2em;
+margin-left: 0.2em;
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-sedona";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
 }
-
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
@@ -58,1110 +46,1058 @@ body{
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-
-
 @media(max-width: 1190px){
-	body{
-		max-width: 768px;
-	}
-	.header{
-		width: 768px;
-	}
-	.header .nav-menu-left ul li{
-		padding: 0;
-		padding: 18px 40px 18px 30px;
-	}
-	.header .nav-logo{
-		margin: 0;
-	}
-	.header .nav-menu-right ul li{
-		padding: 0;
-		padding: 18px 20px 18px 47px;
-	}
-	.section,
-	.section .section-top-welcome,
-	.footer{
-		max-width: 768px;
-	}
-	.section .section-top,
-	.section .section-top-footer{
-		background-size: 768px;
-	}
-	.section .section-top{
-		height: 515px;
-	}
-	.section .section-top .section-top-welcome{
-		padding-top: 20px;
-	}
-	.section .section-top .section-top-gorgeous{
-		padding-top: 5px;
-	}
-	.section .section-top .section-top-sedona{
-		margin-top: 25px;
-	}
-	.section .section-top .section-top-canyon{
-		margin-top: 30px;
-	}
-	.section .section-top-footer{
-		margin-top: -20px;
-	}
-	.section .section-info{
-		margin-top: -30px;
-	}
-	.section .section-top-footer h3{
-		padding-top: 54px;
-		margin: 0 auto;
-	}
-	.section .section-top-footer h3{
-		margin: 20px auto;
-	}
-	.section-info-first-container,
-	.section-info-second-block,
-	.section-info-third-container,
-	.section-info-last-container{
-		max-width: 253px;
-	}
-	.section .section-info-first-container h3{
-		margin: 30px 20px;
-	}
-	.section .section-info-first-container p{
-		margin: 20px;
-	}
-	.section-info-first-image,
-	.section .section-info-third-image {
-		max-width: 515px;
-		background-size: 515px 335px;
-	}
-	.section .section-info-second-block p{
-		line-height: 20px;
-		margin-left: 51px;
-		margin-right: 51px;
-		margin-bottom: 20px;
-	}
-	/*.section .section-info-third,
-	.section .section-info-third-image,
-	.section .section-info-third-container{
-		height: 182px;
-	}*/
-	.section .section-info-third-container h3{
-		margin-top: 15px;
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: 15px;
-	}
-	.section .section-info-third-container-p-two{
-		margin: 15px 30px;
-		line-height: 15px;
-	}
-	.section .section-info-last-container h3{
-		margin: 20px 47px;
-	}
-	.section .section-info-last-container p:last-child{
-		line-height: 20px;
-		margin: 25px 20px;
-	}
-	.footer iframe{
-		width: 768px;
-	}
-	body .footer .footer-bottom{
-		width: 768px;
-		position: relative;
-		margin-top: -53px;
-		height: 50px;
-	}
-	body .footer-down{
-		height: 50px;
-	}
-	.footer .footer-bottom .footer-element h3 a,
-	.footer-down .footer-element h3 a{
-		margin: 0;
-		margin-left: 55px;
-	}
-	.footer .footer-bottom .footer-element h3,
-	.footer-down .footer-element h3{
-		margin: 10px auto;
-	}
-	.footer .footer-bottom .footer-element .dot,
-	.footer-down .footer-element .dot{
-		margin: 0 auto auto 90px;
-	}
-	.footer .footer-bottom .footer-element .htmlacademy,
-	.footer-down .footer-element .htmlacademy{
-		margin-top: 5px;
-		margin-right: 35px;
-	}
-
-	/*sedona-hotel.html*/
-	.header-second .header-second-block1{
-		margin-left: -440px;
-	}
-	.header-second .header-second-block2{
-		margin-left: -280px;
-	}
-	.header-second .filter-range{
-		margin-right: 10px;
-		margin-top: 0;
-	}
-	.footersection .footersection-menu-first .icon-down-dir{
-		margin-right: 30px;
-	}
+body{
+max-width: 768px;
 }
-
-
-
-
-
-/*header*/
+.header{width: 768px;
+}
+.header .nav-menu-left ul li{
+padding: 0;
+padding: 18px 40px 18px 30px;
+}
+.header .nav-logo{
+margin: 0;
+}
+.header .nav-menu-right ul li{
+padding: 0;
+padding: 18px 20px 18px 47px;
+}
+.section,.section .section-top-welcome,.footer{
+max-width: 768px;
+}
+.section .section-top,.section .section-top-footer{
+background-size: 768px;
+}
+.section .section-top{
+height: 515px;
+}
+.section .section-top .section-top-welcome{
+padding-top: 20px;
+}
+.section .section-top .section-top-gorgeous{
+padding-top: 5px;
+}
+.section .section-top .section-top-sedona{
+margin-top: 25px;
+}
+.section .section-top .section-top-canyon{
+margin-top: 30px;
+}
+.section .section-top-footer{
+margin-top: -20px;
+}
+.section .section-info{
+margin-top: -30px;
+}
+.section .section-top-footer h3{
+padding-top: 54px;
+margin: 0 auto;
+}
+.section .section-top-footer h3{
+margin: 20px auto;
+}
+.section-info-first-container,
+.section-info-second-block,
+.section-info-third-container,
+.section-info-last-container{
+max-width: 253px;
+}
+.section .section-info-first-container h3{
+margin: 30px 20px;
+}
+.section .section-info-first-container p{
+margin: 20px;
+}
+.section-info-first-image,.section .section-info-third-image {
+max-width: 515px;
+background-size: 515px 335px;
+}
+.section .section-info-second-block p{line-height: 20px;margin-left: 51px;
+margin-right: 51px;
+margin-bottom: 20px;
+}
+.section .section-info-third-container h3{
+margin-top: 15px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 15px;
+}
+.section .section-info-third-container-p-two{
+margin: 15px 30px;
+line-height: 15px;
+}
+.section .section-info-last-container h3{
+margin: 20px 47px;
+}
+.section .section-info-last-container p:last-child{
+line-height: 20px;
+margin: 25px 20px;
+}
+.section .section-info-last-footer p{
+margin: 23px 185px 49px;
+}
+.footer iframe{
+width: 768px;
+}
+body .footer .footer-bottom{
+width: 768px;
+position: relative;
+margin-top: -53px;
+height: 50px;
+}
+body .footer-down{
+height: 50px;
+}
+.footer .footer-bottom .footer-element h3 a,
+.footer-down .footer-element h3 a{
+margin: 0;
+margin-left: 55px;
+}
+.footer .footer-bottom .footer-element h3,
+.footer-down .footer-element h3{
+margin: 10px auto;
+}
+.footer .footer-bottom .footer-element .dot,
+.footer-down .footer-element .dot{
+margin: 0 auto auto 90px;
+}
+.footer .footer-bottom .footer-element .htmlacademy,.footer-down .footer-element .htmlacademy{
+margin-top: 5px;
+margin-right: 35px;
+}
+.header-second .header-second-block1{
+margin-left: -440px;
+}
+.header-second .header-second-block2{
+margin-left: -280px;
+}
+.header-second .filter-range{
+margin-right: 10px;
+margin-top: 0;
+}
+.footersection .footersection-menu-first .icon-down-dir{
+margin-right: 30px;
+}
+}
 .header{
-	background-color: #ffffff;
-	max-width: 1200px;
-	height: 55px;
-	margin: 0 auto;
+background-color: #ffffff;
+max-width: 1200px;
+height: 55px;
+margin: 0 auto;
 }
-.nav-menu-left ul,
-.nav-menu-right ul{
-	margin: 0 auto;
-	padding: 0;
+.nav-menu-left ul,.nav-menu-right ul{
+margin: 0 auto;
+padding: 0;
 }
 .nav-menu-left ul li{
-	list-style: none;
-	text-align: center;
-	float:left;
-	padding: 17px 84px 17px 72px;
+list-style: none;
+text-align: center;
+float:left;padding: 17px 84px 17px 72px;
 }
 .nav-menu-left a,
 .nav-menu-right a{
-	text-decoration: none;
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	font-size: 13px;
-	font-weight: 26px;
-	color: #000000;
-	text-transform: uppercase;
-}
+text-decoration: none;
+font-family: "PTSans-Bold","Arial",sans-serif;
+font-size: 13px;
+font-weight: 26px;
+color: #000000;
+text-transform: uppercase;}
 .nav-menu-left a:hover,
 .nav-menu-right a:hover{
-	color: #a3c7de;
+color: #a3c7de;
 }
 .nav-menu-left a:active,
 .nav-menu-right a:active{
-	color: #c7c7c7;
+color: #c7c7c7;
 }
 .nav-logo{
-	float: left;
-	margin: auto 50px auto 42px;
+float: left;
+margin: auto 50px auto 42px;
 }
 .nav-menu-right ul li{
-	list-style: none;
-	text-align: center;
-	float: left;
-	padding: 17px 72px 17px 90px;
+list-style: none;
+text-align: center;
+float: left;
+padding: 17px 72px 17px 90px;
 }
-
-
-
-
-/*section in sedona-index.html*/
 .section{
-	width: 1200px;
-	margin: 0 auto;
+width: 1200px;
+margin: 0 auto;
 }
 .section-top{
-	background-image: url("../img/content/welcome-sedona-image-second.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 -82px;
-	background-size: 1200px;
-	min-width: 768px;
-	max-width: 1200px;
-}
+background-image: url("../img/content/welcome-sedona-image-second.jpg");
+background-repeat: no-repeat;
+background-position: 0 -82px;
+background-size: 1200px;min-width: 768px;max-width: 1200px;}
 .section-top-welcome{
-	padding-top: 76px;
-	height: 45px;
-	text-align: center;
-	width: 1200px;
+padding-top: 76px;
+height: 45px;
+text-align: center;
+width: 1200px;
 }
 .section-top-gorgeous{
-	text-align: center;
-	margin: 0;
-	height: 30px;
-	padding-top: 12px;
-	padding-bottom: 0;
+text-align: center;
+margin: 0;
+height: 30px;
+padding-top: 12px;
+padding-bottom: 0;
 }
 .section-top-sedona{
-	text-align: center;
-	height: 78px;
-	margin-top: 52px;
+text-align: center;
+height: 78px;
+margin-top: 52px;
 }
 .section-top-canyon{
-	text-align: center;
-	margin-top: 56px;
-	height: 80px;
+text-align: center;
+margin-top: 56px;
+height: 80px;
 }
 .section-top-footer{
-	background-image: url("../img/content/background-fon.png");
-	background-repeat: no-repeat;
-	text-align: center;
-	margin-top: 24px;
-	height: 274px;
+background-image: url("../img/content/background-fon.png");
+background-repeat: no-repeat;
+text-align: center;
+margin-top: 24px;
+height: 274px;
 }
 .section-top-footer h3{
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	font-weight: 26px;
-	font-size: 21px;
-	color: #000000;
-	text-transform: uppercase;
-	padding-top: 116px;
-	margin:0 360px;
-	margin-bottom: 30px;
-	width: 470px;
+font-family: "PTSans-Bold","Arial",sans-serif;
+font-weight: 26px;
+font-size: 21px;
+color: #000000;
+text-transform: uppercase;
+padding-top: 116px;
+margin:0 360px;
+margin-bottom: 30px;
+width: 470px;
 }
 .section-top-footer p{
-	margin: 0;
-	padding-bottom: 58px;
-	color: #4e4e4e;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	font-size: 14px;
-	font-weight: 24px;
-	text-transform: uppercase;
+margin: 0;
+padding-bottom: 58px;
+color: #4e4e4e;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+font-size: 14px;
+font-weight: 24px;
+text-transform: uppercase;
 }
-/*section-info in sedona-index.html level 1*/
 .section-info-first{
-	background-color: #81b3d2;
-	height: 256px;
-	max-width: 1200px;
+background-color: #81b3d2;
+height: 256px;
+max-width: 1200px;
 }
 .section-info-first-container{
-	text-align: center;
-	width: 400px;
-	height: 256px;
-	float: left;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	color: #f2f2f2;
-	font-size: 14px;
-	font-weight: 21px;
-	text-transform: uppercase;
+text-align: center;
+width: 400px;
+height: 256px;
+float: left;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+color: #f2f2f2;
+font-size: 14px;
+font-weight: 21px;
+text-transform: uppercase;
 }
 .section-info-first-container h3{
-	margin-left: 105px;
-	margin-right: 105px;
-	margin-top: 50px;
-	line-height: 23px;
-	margin-bottom: 23px;
-	font-size: 21px;
-	font-weight: 21px;
+margin-left: 105px;
+margin-right: 105px;
+margin-top: 50px;
+line-height: 23px;
+margin-bottom: 23px;
+font-size: 21px;
+font-weight: 21px;
 }
 .section-info-first-container p{
-	color: #ddebf3;
+color: #ddebf3;
 }
 .section-info-first-container-p-one{
-	margin-top: 23px;
-	margin-bottom: 47px;
-	line-height: 20px;
-	margin-left: 53px;
-	margin-right: 53px;
+margin-top: 23px;
+margin-bottom: 47px;
+line-height: 20px;
+margin-left: 53px;
+margin-right: 53px;
 }
 .section-info-first-image{
-	background-image: url("../img/content/sedona-city.jpg");
-	background-repeat: no-repeat;
-	background-size: 800px;
-	background-position: 0 -78px;
-
-	float: left;
-	width: 800px;
-	height: 256px;
+background-image: url("../img/content/sedona-city.jpg");
+background-repeat: no-repeat;
+background-size: 800px;
+background-position: 0 -78px;
+float: left;
+width: 800px;
+height: 256px;
 }
-/*section-info in sedona-index.html level 2*/
-.section-info-second{
-	background-color: #ffffff;
-	text-transform: uppercase;
-	height: 328px;
-}
-
-.section-info-second-block{
-	float: left;
-	width: 400px;
-	height: 328px;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	text-align: center;
-	color: #414141;
-	font-size: 14px;
-	font-weight: 21px;
+.section-info-second{background-color: #ffffff;text-transform: uppercase;height: 328px;}
+.section-info-second-block{float: left;width: 400px;height: 328px;font-family: "PTSans-Regular","Tahoma",sans-serif;
+text-align: center;
+color: #414141;
+font-size: 14px;
+font-weight: 21px;
 }
 .section-info-second-block img{
-	margin-top: 59px;
+margin-top: 59px;
 }
 .section-info-second-block:last-child img{
-	margin-top: 56px;
+margin-top: 56px;
 }
 .section-info-second-block h3{
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	font-size: 21px;
-	color: #000000;
-	margin: 22px auto 22px auto;
+font-family: "PTSans-Bold","Arial",sans-serif;
+font-size: 21px;
+color: #000000;
+margin: 22px auto 22px auto;
 }
 .section-info-second-block p{
-	line-height: 20px;
-	margin-left: 60px;
-	margin-right: 65px;
+line-height: 20px;
+margin-left: 60px;
+margin-right: 65px;
 }
 .section-info-second-block:nth-child(2) p{
-	margin-left: 50px;
-	margin-right: 55px;
+margin-left: 50px;
+margin-right: 55px;
 }
-/*section-info in sedona-index.html level 3*/
 .section-info-third{
-	background-color: #81b3d2;
-	height: 257px;
+background-color: #81b3d2;
+height: 257px;
 }
 .section-info-third-image{
-	float: left;
-	width: 800px;
-	height: 257px;
-	background-image: url("../img/content/sedona-landscape.jpg");
-	background-repeat: no-repeat;
-	background-size: 800px;
-	background-position: -1px -76px;
+float: left;
+width: 800px;
+height: 257px;
+background-image: url("../img/content/sedona-landscape.jpg");
+background-repeat: no-repeat;
+background-size: 800px;
+background-position: -1px -76px;
 }
 .section-info-third-container{
-	float: left;
-	text-align: center;
-	width: 400px;
-	height: 257px;
-	text-transform: uppercase;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	color: #e6f0f6;
-	font-size: 14px;
-	font-weight: 21px;
+float: left;
+text-align: center;
+width: 400px;
+height: 257px;
+text-transform: uppercase;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+color: #e6f0f6;
+font-size: 14px;
+font-weight: 21px;
 }
 .section-info-third-container h3{
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	color: #ffffff;
-	font-size: 21px;
-	margin-top: 57px;
-	line-height: 20px;
-	margin-left: 124px;
-	margin-right: 125px;
-	margin-bottom: 0;
+font-family: "PTSans-Bold","Arial",sans-serif;
+color: #ffffff;
+font-size: 21px;
+margin-top: 57px;
+line-height: 20px;
+margin-left: 124px;
+margin-right: 125px;
+margin-bottom: 0;
 }
 .section-info-third-container-p-one{
-	margin: 25px 0 23px 0;
+margin: 25px 0 23px 0;
 }
 .section-info-third-container-p-two{
-	margin-top: 0;
-	line-height: 20px;
-	margin-right: 40px;
-	margin-left: 40px;
+margin-top: 0;
+line-height: 20px;
+margin-right: 40px;
+margin-left: 40px;
 }
 /*section-info in sedona-index.html level 4*/
 .section-info-last-container{
-	text-align: center;
-	float: left;
-	width: 400px;
-	height: 257px;
-	text-transform: uppercase;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	font-weight: 21px;
-	color: #656565;
+text-align: center;
+float: left;
+width: 400px;
+height: 257px;
+text-transform: uppercase;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+font-weight: 21px;
+color: #656565;
 }
 .section-info-last-container h3{
-	margin-top: 45px;
-	margin-right: 140px;
-	margin-left: 140px;
-	margin-bottom: 0;
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	font-size: 21px;
-	font-weight: 26px;
-	color: #000000;
-	line-height: 22px;
+margin-top: 45px;
+margin-right: 140px;
+margin-left: 140px;
+margin-bottom: 0;
+font-family: "PTSans-Bold","Arial",sans-serif;
+font-size: 21px;
+font-weight: 26px;
+color: #000000;
+line-height: 22px;
 }
 .section-info-last-container p{
-	margin-top: 25px;
-	font-size: 13px;
-	margin-bottom: 24px;
+margin-top: 25px;
+font-size: 13px;
+margin-bottom: 24px;
 }
 .section-info-last-container p:last-child{
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 14px;
-	margin-left: 65px;
-	margin-right: 65px;
-	line-height: 20px;
+margin-top: 0;
+margin-bottom: 0;
+font-size: 14px;
+margin-left: 65px;
+margin-right: 65px;
+line-height: 20px;
+}
+.section-info-last::after{
+clear: both;
 }
 .section-info-last-footer{
-	height: 292px;
-	text-align: center;
-	background-color: #ffffff;
-	text-transform: uppercase;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	color: #7d7d7d;
+height: 292px;
+text-align: center;
+background-color: #ffffff;
+text-transform: uppercase;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+color: #7d7d7d;
 }
 .section-info-last-footer h2{
-	font-weight: 26px;
-	font-size: 30px;
-	color: #262626;
-	padding-top: 45px;
-	margin: 0;
+font-weight: 26px;
+font-size: 30px;
+color: #262626;
+padding-top: 45px;
+margin: 0;
 }
 .section-info-last-footer p{
-	margin-top: 23px;
-	margin-bottom: 49px;
-	font-size: 14px;
-	line-height: 24px;
+margin: 23px 401px 49px;
+font-size: 14px;
+line-height: 24px;
 }
-.section-info-last-footer button{	
-	width: 567px;
-	height: 86px;
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	text-transform: uppercase;
-	font-size: 21px;
-	font-weight: 24px;
-	color:#ffffff;
-	background-color: #766357;
-	border: 0;
+.section-info-last-footer button{
+width: 567px;
+height: 86px;
+font-family: "PTSans-Bold","Arial",sans-serif;
+text-transform: uppercase;
+font-size: 21px;
+font-weight: 24px;
+color:#ffffff;
+background-color: #766357;
+border: 0;
 }
 .section-info-last-footer button:hover{
-	background-color: #604e43;
+background-color: #604e43;
 }
 .section-info-last-footer button:active{
-	background-color: #503e33;
-	color: #857871;
+background-color: #503e33;
+color: #857871;
 }
 /*footer*/
 .footer{
-	background-image: url("../img/content/local-map.jpg");
-	background-size: 1200px 596px;
-	max-width: 1200px;
-	max-height: 596px;
-	position: relative;
-	margin: 0 auto;
+background-image: url("../img/content/local-map.jpg");
+background-size: 1200px 596px;
+max-width: 1200px;
+max-height: 596px;
+position: relative;
+margin: 0 auto;
 }
 .style-form{
-	position: relative; 
-	top: 0; 
-	margin: 0 auto; 
-	width: 569px;
+position: relative;
+top: 0;
+margin: 0 auto;
+width: 569px;
 }
 iframe{
-	width: 1200px;
-	height: 596px;
-	border: 0;
+width: 1200px;
+height: 596px;
+border: 0;
 }
 .footer-form{
-	width: 569px;
-	background-color: #ffffff;
-	position: absolute;
-	margin: 0 auto;
+width: 569px;
+background-color: #ffffff;
+position: absolute;
+margin: 0 auto;
 }
 .hide{
-	opacity: 0;
-	top: -500px;
-	transition: opacity 0.2s, top 1s;
+opacity: 0;
+top: -500px;
+transition: opacity 0.2s, top 1s;
 }
 .show{
-	opacity: 1;
-	top: 0;
-	transition: opacity 1s, top 0.3s;
+opacity: 1;
+top: 0;
+transition: opacity 1s, top 0.3s;
 }
 .footer .footer-bottom{
-	background-color: rgba(255,255,255,0.7);
-	position: relative;
-	height: 120px; 
-	margin-top: -120px;
+background-color: rgba(255,255,255,0.7);
+position: relative;
+height: 120px;
+margin-top: -120px;
 }
 .footer-down{
-	max-width: 1200px;
-	margin: 0 auto;
-	height: 120px;
-	background-color: rgb(255,255,255);
+max-width: 1200px;
+margin: 0 auto;
+height: 120px;
+background-color: rgb(255,255,255);
+}
+.footer-element:after{
+clear: both;
 }
 .footer-element h3{
-	float: left;
-	text-align: center;
-	margin-top: 36px;
+float: left;
+text-align: center;
+margin-top: 36px;
 }
 .footer-element h3 a {
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	font-size: 21px;
-	font-weight: 26px;
-	color: #000000;
-	text-transform: uppercase;
-	text-decoration: none;
-	margin-left: 135px;
+font-family: "PTSans-Bold","Arial",sans-serif;
+font-size: 21px;
+font-weight: 26px;
+color: #000000;
+text-transform: uppercase;
+text-decoration: none;
+margin-left: 135px;
 }
 .footer-element .dot{
-	float: left;
-	margin: 27px auto auto 255px;
+float: left;
+margin: 27px auto auto 255px;
+}
+.footer-element .dot:after{
+clear: both;
 }
 .footer-element .dot a{
-	float: left;
-	width: 46px;
-	height: 48px;
-	margin-left: 5px;
-	text-align:center;
-	background-color: #81b3d2;
+float: left;
+width: 46px;
+height: 48px;
+margin-left: 5px;
+text-align:center;
+background-color: #81b3d2;
 }
 .footer-element .dot a span{
-	font-size: 21px;
-	color: #ffffff;
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: 12px;
+font-size: 21px;
+color: #ffffff;
+display: inline-block;
+vertical-align: middle;
+margin-top: 12px;
 }
 .footer-element .dot a:hover{
-	background-color: #669ec0;
+background-color: #669ec0;
 }
 .footer-element .dot a:active{
-	background-color: #5496bd;
-	color: #88b6d1;
+background-color: #5496bd;
+color: #88b6d1;
 }
 .htmlacademy{
-	float:right;
-	margin-top: 31px;
-	margin-right: 100px;
+float:right;
+margin-top: 31px;
+margin-right: 100px;
 }
 .htmlacademy div:first-child{
-	float: left;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "PTSans-Regular","Tahoma",sans-serif;
-	font-size: 19px;
-	font-weight: 20px;
-	margin: 10px;
+float: left;
+text-align: center;
+text-transform: uppercase;
+font-family: "PTSans-Regular","Tahoma",sans-serif;
+font-size: 19px;
+font-weight: 20px;
+margin: 10px;
 }
 .htmlacademy a {
-	background-image: url("../img/decoration/htmlacademy-logo.png");
-	background-size: 120px;
-	background-repeat: no-repeat;
-	width: 120px;
-	height: 40px;
-	float: right;
+background-image: url(
+"../img/decoration/htmlacademy-logo.png");
+background-size: 120px;
+background-repeat: no-repeat;
+width: 120px;
+height: 40px;
+float: right;
 }
 .htmlacademy a:hover{
-	background-image: url("../img/decoration/htlacademy-logo-blue.png");
+background-image: url("../img/decoration/htlacademy-logo-blue.png");
 }
 .htmlacademy a:active{
-	background-image: url("../img/decoration/htmlacademy-logo.png");
-	opacity: 0.4;
+background-image: url("../img/decoration/htmlacademy-logo.png");
+opacity: 0.4;
 }
 .clear{
-	clear: both;
+clear: both;
 }
 /*form*/
 .footer-form form{
-	height: 370px;
+height: 370px;
+}
+.footer-form form:after{
+clear: both;
 }
 form div:first-child{
-	margin-top: 20px;
+margin-top: 20px;
 }
-form,
-form div{
-	width: 560px;
-	margin: 0 auto;
+form,form div{
+width: 560px;
+margin: 0 auto;
 }
 .count-person{
-	float: left;
-	width: 275px;
+float: left;
+width: 275px;
 }
 .one{
-	width: 285px;
+width: 285px;
 }
 .not{
-	margin-left: 40px;
+margin-left: 40px;
 }
 .not+.btn-minus{
-	margin-left: 30px;
+margin-left: 30px;
 }
 input{
-	background-color: #f2f2f2;
-	border: 0;
+background-color: #f2f2f2;border: 0;
 }
-
 form input[type="text"]{
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 26px;
-	color: #000000;
-	padding-left: 5px;
-	padding-top: 0;
-	height: 37px;
-	width: 300px;
-	margin-left: 19px;
-	margin-top: 30px;
-	float: left;
+font-family: "PTSans-Bold","Arial",sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 26px;
+color: #000000;
+padding-left: 5px;
+padding-top: 0;
+height: 37px;
+width: 300px;
+margin-left: 19px;
+margin-top: 30px;
+float: left;
 }
 form>div>.date-in{
-	margin-left: 22px;
+margin-left: 22px;
 }
 form input[type="text"]:focus{
-	background:: 2px solid #e5e5e5;
-	background-color: #ffffff;
+background: 2px solid #e5e5e5;
+background-color: #ffffff;
 }
 form div .person{
-	height: 35px;
-	width: 38px;
-	padding: 0;
-	margin-left: 0;
-	margin-top: 32px;
-	text-align: center;
+height: 35px;
+width: 38px;
+padding: 0;
+margin-left: 0;
+margin-top: 32px;
+text-align: center;
 }
 .btn-find{
-	width: 458px;
-	height: 60px;
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 21px;
-	font-weight: 26px;
-	color: #ffffff;
-	background-color: #81b3d2;
-	margin: 0px auto;
-	border: 0;
+width: 458px;
+height: 60px;
+font-family: "PTSans-Bold","Arial",sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-size: 21px;
+font-weight: 26px;
+color: #ffffff;
+background-color: #81b3d2;
+margin: 0px auto;
+border: 0;
 }
 .btn-find:hover{
-	background-color: #669ec0;
-	color: #ffffff;
+background-color: #669ec0;
+color: #ffffff;
 }
 .btn-find:active{
-	background-color: #5496bd;
-	color: #88b6d1;
+background-color: #5496bd;
+color: #88b6d1;
 }
 .section-button-find{
-	text-align: center;
-	margin-top: 55px;
+text-align: center;
+margin-top: 55px;
 }
 form div label{
-	float: left;
-	margin-left: 55px;
-	margin-top: 40px;
-	font-family: "PTSans-Bold","Arial",sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 26px;
-	color: #000000;
+float: left;
+margin-left: 55px;
+margin-top: 40px;
+font-family: "PTSans-Bold","Arial",sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 26px;
+color: #000000;
 }
 .btn-calendar{
-	float: left;
-	height: 38px;
-	width: 38px;
-	margin-top: 30px;
-	background-color: #f2f2f2;
-	border:0;
-	font-size: 14px;
-	font-weight: 26px;
-	color: #c2c2c2;
+float: left;
+height: 38px;
+width: 38px;
+margin-top: 30px;
+background-color: #f2f2f2;
+border:0;
+font-size: 14px;
+font-weight: 26px;
+color: #c2c2c2;
 }
-.btn-minus{
-	float: left;
-	margin-left: 37px;
-	margin-top: 32px;
-	height: 35px;
-	width: 38px;
-	border: 0;
-	background-color: #f2f2f2;
-	font-size: 14px;
-	font-weight: 26px;
-	color: #a9a9a9;
+.btn-minus{float: left;margin-left: 37px;
+margin-top: 32px;
+height: 35px;
+width: 38px;
+border: 0;
+background-color: #f2f2f2;
+font-size: 14px;
+font-weight: 26px;
+color: #a9a9a9;
 }
 .btn-plus{
-	margin-top: 32px;
-	float: left;
-	height: 35px;
-	width: 38px;
-	border: 0;
-	background-color: #f2f2f2;
-	color: #a9a9a9;
-	font-size: 14px;
-	font-weight: 26px;
+margin-top: 32px;
+float: left;
+height: 35px;
+width: 38px;
+border: 0;
+background-color: #f2f2f2;
+color: #a9a9a9;
+font-size: 14px;
+font-weight: 26px;
 }
 .btn-calendar:hover,
 .btn-minus:hover,
 .btn-plus:hover{
-	color: #000000;
+color: #000000;
 }
 .btn-calendar:active,
 .btn-minus:active,
 .btn-plus:active{
-	color: #81b3d2;
+color: #81b3d2;
 }
-
 /*section in hotels.html*/
 .header-second{
-	max-width: 1200px;
-	height: 220px;
-	background-image: url("../img/background/background-sedona-hotel.jpg");
-	margin: 0 auto -15px auto;
-	padding: 0;
-	font-family:"PTSans-Regular","Tahoma", sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 21px;
-	color: #ffffff;
+max-width: 1200px;
+height: 220px;
+background-image: url("../img/background/background-sedona-hotel.jpg");
+margin: 0 auto -15px auto;
+padding: 0;
+font-family:"PTSans-Regular","Tahoma", sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 21px;
+color: #ffffff;
 }
-
 .header-second-block1{
-	float: left;
-	margin-left: -650px;
+float: left;
+margin-left: -650px;
 }
 .header-second-block2{
-	float: left;
-	margin-left: -390px;
+float: left;
+margin-left: -390px;
+}
+.header-second-block1{
+width: 134px;}
+.header-second-block2{
+width: 134px;
 }
 .header-second-block1 h3,
 .header-second-block2 h3{
-	font-size: 16px;
-	margin-bottom: 30px;
-	margin-top: 29px;
+font-size: 16px;
+margin-bottom: 30px;
+margin-top: 29px;
 }
-
 /*filter-range in sedona-hotel.html*/
 .filter-range {
-	width: 330px;
-	float: right;
-	margin-right:67px;
-	margin-top: 28px;
-	font-family:"PTSans-Regular","Tahoma",sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
+width: 330px;
+float: right;
+margin-right:67px;
+margin-top: 28px;
+font-family:"PTSans-Regular","Tahoma",sans-serif;
+text-transform: uppercase;
+color: #ffffff;
 }
 .filter-range-title {
-	margin-bottom: 9px;
-
-	line-height: 21px;
-	font-weight: 600;
-	font-size: 16px;
+margin-bottom: 9px;
+line-height: 21px;
+font-weight: 600;
+font-size: 16px;
 }
 .price-controls {
-	position: relative;
-	height: 34px;
-	margin-bottom: 20px;
-	font-size: 0;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
+position: relative;
+height: 34px;
+width: 330px;
+margin-bottom: 20px;
+font-size: 0;
+border: 2px solid #ffffff;
+border-radius: 2px;
 }
-.price-controls::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 2px;
-	height: 22px;
-	background: #ffffff;
-	transform: translate(-50%, -50%);
+.price-controls::after {content: "";
+position: absolute;top: 50%;
+left: 50%;
+width: 2px;
+height: 22px;
+background: #ffffff;
+transform: translate(-50%, -50%);
 }
-.price-controls label {
-	display: inline-block;
-	font-size: 14px;
-	line-height: 38px;
-	vertical-align: top;
-	cursor: pointer;
+.price-controls label {display: inline-block;
+font-size: 14px;
+line-height: 38px;
+vertical-align: top;
+cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
-	width: 80px;
-	padding-left: 60px;
+.price-controls .min-price,.price-controls .max-price {
+width: 80px;
+padding-left: 60px;
 }
-.price-controls input {
-	width: 50px;
-	margin: 0;
-	color: inherit;
-	font: inherit;
-	background: none;
-	border: none;
-	outline: none;
+.price-controls label input {
+width: 50px;
+float: right;
+margin: 0;
+color: inherit;
+font: inherit;
+background: none;
+border: none;
+outline: none;
 }
 .range-controls {
-	position: relative;
-	margin-bottom: 32px;
+position: relative;
+margin-bottom: 32px;
 }
 .range-controls .scale {
-	height: 2px;
-	background: rgba(255, 255, 255, 0.3);
+height: 2px;
+background: rgba(255, 255, 255, 0.3);
 }
 .range-controls .bar {
-	width: 80%;
-	height: 2px;
-	background: #ffffff;
+width: 80%;
+height: 2px;
+background: #ffffff;
 }
 .range-toggle {
-	position: absolute;
-	top: -9px;
-	width: 4px;
-	height: 4px;
-	background: #ababab;
-	border: 8px solid #ffffff;
-	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-	cursor: pointer;
+position: absolute;
+top: -9px;
+width: 4px;
+height: 4px;
+background: #ababab;
+border: 8px solid #ffffff;
+border-radius: 50%;
+box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+cursor: pointer;
 }
 .range-toggle:hover {
-	background: #1c4f80;
+background: #1c4f80;
 }
 .range-toggle-min {
-	left: 0;
+left: 0;
 }
 .range-toggle-max {
-	left: 80%;
+left: 80%;
 }
 .btn-transparent {
-	display: block;
-	margin: 0 auto;
-	padding: 6px 30px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #ffffff;
-	text-transform: uppercase;
-	background: transparent;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-	outline: none;
-	cursor: pointer;
+display: block;
+margin: 0 auto;
+padding: 6px 30px;
+font-size: 14px;
+line-height: 20px;
+color: #ffffff;
+text-transform: uppercase;
+background: transparent;
+border: 2px solid #ffffff;
+border-radius: 2px;
+outline: none;
+cursor: pointer;
 }
 .btn-transparent:hover {
-	color: #000000;
-	background: #ffffff;
+color: #000000;
+background: #ffffff;
 }
-
 input[type="checkbox"]{
-	display: none;
+display: none;
 }
 input[type="checkbox"]+label{
-	display: block;
-	position: relative;
-	cursor: pointer;
-	margin-bottom: 35px;
-	padding-left: 40px;
-	line-height: 10px;
-	font-size: 14px;
+display: block;
+position: relative;
+cursor: pointer;
+margin-bottom: 35px;
+padding-left: 40px;
+line-height: 10px;
+font-size: 14px;
 }
 input[type="checkbox"]+label::before{
-	content: "\2610";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 10px;
-	height: 10px;
-	font-family: "symbols-sedona";
-	font-size: 26px;
-}
+content: "\2610";
+position: absolute;
+top: 0;
+left: 0;
+width: 10px;
+height: 10px;font-family: "symbols-sedona";font-size: 26px;}
 input[type="checkbox"]:checked+label::before{
-	content: "\2611";;
+content: "\2611";
 }
 input[type="checkbox"]+label:active{
-	color: #6a6a6a;
+color: #6a6a6a;
 }
 input[type="checkbox"]:checked+label:active{
-	color: #6a6a6a;
+color: #6a6a6a;
 }
-
-
 /*file hotel.html*/
 .footersection{
-	max-width: 1200px;
-	margin:0 auto;
-	font-family:"PTSans-Regular","Tahoma",sans-serif;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 18px;
+max-width: 1200px;
+margin:0 auto;
+font-family:"PTSans-Regular","Tahoma",sans-serif;
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 18px;
 }
-
 .footersection-menu-first{
-	background-color: white;
-	border-bottom: 1px solid #e5e5e5;
-	height: 85px;
+background-color: white;
+border-bottom: 1px solid #e5e5e5;
+height: 85px;
 }
 .footersection-menu-first h3,
 .footersection-menu-first p,
 .footersection-menu-first li{
-	float: left;
+float: left;
 }
 .footersection-menu-first h3{
-	margin-left: 72px;
-	margin-top: 30px;
-	margin-bottom: 0;	
-	font-family:"PTSans-Bold","Arial",sans-serif;
-	font-size: 21px;
-	font-weight: 26px;
-	color: #000000;
+margin-left: 72px;
+margin-top: 30px;
+margin-bottom: 0;
+font-family:"PTSans-Bold","Arial",sans-serif;
+font-size: 21px;
+font-weight: 26px;
+color: #000000;
 }
 .footersection-menu-first p{
-	color: #000000;
-	margin-left: 53px;
-	margin-right: 42px;
-	margin-top: 38px;
+color: #000000;
+margin-left: 53px;
+margin-right: 42px;
+margin-top: 38px;
 }
 .footersection-menu-first li{
-	list-style: none;
-	text-decoration: none;
-	margin-right: 33px;
-	margin-top: 38px;
+list-style: none;
+text-decoration: none;
+margin-right: 33px;
+margin-top: 38px;
 }
 .footersection-menu-first li a {
-	text-decoration: none;
-	color: #c7c7c7;
-	border-bottom: 1px dashed #81b3d2;
+text-decoration: none;
+color: #c7c7c7;
+border-bottom: 1px dashed #81b3d2;
 }
 .footersection-menu-first li:first-child a{
-	color: #92bdd8;
-	border-bottom: 0;
+color: #92bdd8;
+border-bottom: 0;
 }
 .footersection-menu-first li a:hover{
-	color: #81b3d2;
+color: #81b3d2;
 }
 .footersection-menu-first li a:active{
-	color: #000000;
-	border: 0;
+color: #000000;
+border: 0;
 }
 .footersection-menu-first .icon-up-dir{
-	content:"\25b2";
-	margin-right: 5px;
+content:"\25b2";
+margin-right: 5px;
 }
 .footersection-menu-first .icon-down-dir{
-	content:"\25bc";
-	margin-right: 74px;
+content:"\25bc";
+margin-right: 74px;
 }
 .footersection-menu-first .icon-down-dir,
 .footersection-menu-first .icon-up-dir{
-	float: right;
-	width: 20px;
-	height: 20px;
-	font-size: 23px;
-	color: #cccccc;
-	text-decoration: none;
-	margin-top: 30px;
+float: right;
+width: 20px;
+height: 20px;
+font-size: 23px;
+color: #cccccc;
+text-decoration: none;
+margin-top: 30px;
 }
-.footersection-menu-first .icon-down-dir:hover,
-.footersection-menu-first .icon-up-dir:hover{
-	color: #000000;
+.footersection-menu-first .icon-down-dir:hover,.footersection-menu-first .icon-up-dir:hover{
+color: #000000;
 }
-.footersection-menu-first .icon-down-dir:active,
-.footersection-menu-first .icon-up-dir:active{
-	color: #81b3d2;
+.footersection-menu-first .icon-down-dir:active,.footersection-menu-first .icon-up-dir:active{
+color: #81b3d2;
 }
-
-
 .footersection-menu-block {
-	max-width: 1200px;
-	height: 150px;
-	background-color: #ffffff;
-	border-bottom: 1px solid #e5e5e5;
+max-width: 1200px;
+height: 150px;
+background-color: #ffffff;
+border-bottom: 1px solid #e5e5e5;
 }
 .block-one{
-	float: left;
+float: left;
 }
 .block-one img{
-	width: 135px;
-	margin-left: 70px;
-	margin-top: 30px;
-	margin-right: 30px;
+width: 135px;
+margin-left: 70px;
+margin-top: 30px;
+margin-right: 30px;
 }
 .block-two{
-	float: left;
-	padding-top: 10px;
-	height: 57px;
+float: left;
+padding-top: 10px;
+height: 57px;
 }
 .block-two h2 a{
-	font-family:"PTSans-Bold","Arial",sans-serif;
-	text-decoration: none;
-	font-size: 21px;
-	font-weight: 26px;
-	color: #000000;
-	margin-top: 25px;
+font-family:"PTSans-Bold","Arial",sans-serif;
+text-decoration: none;
+font-size: 21px;
+font-weight: 26px;
+color: #000000;
+margin-top: 25px;
 }
 .block-two h2 a:hover{
-	color: #81b3d2;
+color: #81b3d2;
 }
 .block-two h2 a:active{
-	color: #b2b2b2;
+color: #b2b2b2;
 }
-
 .block-two label{
-	font-size: 14px;
+font-size: 14px;
 }
 .block-two-section{
-	width:230px;
+width:230px;
 }
 .block-two-section-first{
-	float: left;
-	width: 110px;
-	margin-top: -5px;
+float: left;
+width: 110px;
+margin-top: -5px;
 }
 .block-two-section-last{
-	float: right;
-	width: 110px;
-	margin-left: 7px;
-	margin-top: -5px;
+float: right;
+width: 110px;margin-left: 7px;
+margin-top: -5px;
 }
 .block-two-section form{
-	width: 110px;
+width: 110px;
 }
 .block-two-section-first .button-info{
-	width: 110px;
-	margin-top: 20px;
+width: 110px;
+margin-top: 20px;
 }
 .block-two-section-first .button-info a{
-	width: 110px;
-	background-color: #81b3d2;
-	font-family:"PTSans-Bold","Arial",sans-serif;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: 21px;
-	color: #ffffff;
-	padding: 5px 17px;
-	margin-top: 20px; 
+width: 110px;
+background-color: #81b3d2;
+font-family:"PTSans-Bold","Arial",sans-serif;
+text-decoration: none;
+font-size: 14px;
+font-weight: 21px;
+color: #ffffff;
+padding: 5px 17px;
+margin-top: 20px;
 }
-
 .block-two-section-last button{
-	width: 143px;
-	height: 28px;
-	margin-top: 15px; 
-	font-family:"PTSans-Bold","Arial",sans-serif;
-	text-transform: uppercase;
-	font-weight: 21px;
-	color: #ffffff;
-	font-size: 14px;
-	background-color: #766357;
-	border: 0;
-	border-radius: 0;
+width: 143px;
+height: 28px;
+margin-top: 15px;
+font-family:"PTSans-Bold","Arial",sans-serif;
+text-transform: uppercase;
+font-weight: 21px;
+color: #ffffff;
+font-size: 14px;
+background-color: #766357;
+border: 0;
+border-radius: 0;
 }
 .block-two-section-first a:hover{
-	background-color: #669ec0;
+background-color: #669ec0;
 }
 .block-two-section-last button:hover{
-	background-color: #604e43;
+background-color: #604e43;
 }
 .block-two-section-first a:active{
-	background-color: #5496bd;
-	color: #88b6d1;
+background-color: #5496bd;
+color: #88b6d1;
 }
 .block-two-section-last button:active{
-	background-color: #503e33;
-	color: #7e7169;
+background-color: #503e33;
+color: #7e7169;
 }
 .block-three{
-	float: right;
-	width: 111px;
-	height: 150px;
-	margin-right: 73px;
+float: right;
+width: 111px;
+height: 150px;
+margin-right: 73px;
 }
 .stars{
-	height: 45px;
-	padding-top: 28px;
-	text-align: right;
+height: 45px;
+padding-top: 28px;
+text-align: right;
 }
 .stars span{
-	color: #81b3d2;
-	font-size: 17px;
+color: #81b3d2;
+font-size: 17px;
 }
 .block-three p{
-	background-color: #f2f2f2;
-	width: 111px;
-	height: 27px;
-	padding-top: 5px;
-	text-align: center;
-	font-size: 14px;
-	color: #8b8b8b;
+background-color: #f2f2f2;
+width: 111px;
+height: 27px;
+padding-top: 5px;
+text-align: center;
+font-size: 14px;
+color: #8b8b8b;
 }
 .footer-hotel{
-	max-width: 1200px;
-	margin: 0 auto;
+max-width: 1200px;
+margin: 0 auto;
 }
